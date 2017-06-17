@@ -5,4 +5,4 @@ Registration Fee: $10 per person for 90 mins session
 Please visit the following link for more details. 
 https://sites.google.com/view/summerprogrammingcourses/home
 
-![Java Program by GPTA](https://github.com/sairamaj/programmingclass/blob/master/JavaProgByGPTA.jpg)
+![Java Program by GPTA](https://github.com/sairamaj/programmingclass/blob/master/images/JavaProgByGPTA.JPG)
