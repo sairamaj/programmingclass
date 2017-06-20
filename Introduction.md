@@ -25,6 +25,7 @@
   After looking number of classes and the amount of coverage needed to finish the course, I don't think the summer program alone will finish the entire course. My aim is not just to finish the course but make everyone learning comfortable in Basic Java programming. With that said I may continue this in the school year also.
 
 # No classes
+* July 4th
 * July 12-13
 
 
