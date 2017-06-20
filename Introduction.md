@@ -1,7 +1,7 @@
 # Schedule
 * We have 22 students for this class. There will be 2 sessions per week to start with and based on how it goes I may increase the frequency. As it is summer and filled with family activities  the classes will be during week days. 
 * Tue 8:00-9:30(PM) and Wed 8:00-9:30(PM)
-* We are starting in next week (Jun 27th Tue, Jun 28th Wed)(see the schedule form where you are going to select either Tue or Wed slot)
+* __Note__ : **We are starting next week (Jun 27th Tue, Jun 28th Wed)(see the schedule form where you are going to select either Tue or Wed slot)**
 
 # Students
 * Please have a laptop ready for yourself (Either Windows or Mac will work)
