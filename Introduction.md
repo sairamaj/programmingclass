@@ -1,6 +1,7 @@
 # Schedule
 * We have 22 students for this class. There will be 2 sessions per week to start with and based on how it goes I may increase the frequency. As it is summer and filled with family activities  the classes will be during week days. 
 * Tue 8:00-9:30(PM) and Wed 8:00-9:30(PM)
+* We are starting in next week (Jun 27th Tue, Jun 28th Wed)(see the schedule form where you are going to select either Tue or Wed slot)
 
 # Students
 * Please have a laptop ready for yourself (Either Windows or Mac will work)
@@ -18,6 +19,7 @@
 * Encourage them by asking what they learned and does have any home work (Will be light home work as they need to enjoy summer vacation)
 * Ping them especially after 2 classes and see whether he/she is ok with computer programming (feel free to drop if there is no interest in going forward for the kid)
 * Feedback is appreciated (will publish feedback page)
+
 
 ## Note
   After looking number of classes and the amount of coverage needed to finish the course, I don't think the summer program alone will finish the entire course. My aim is not just to finish the course but make everyone learning comfortable in Basic Java programming. With that said I may continue this in the school year also.
