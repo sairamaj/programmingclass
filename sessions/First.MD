@@ -3,9 +3,11 @@
     * Everybody shared their details with others
 # Computer fundamentals
 * We asked some questions about what it means by a Computer
-    * What is it Computer mean?
+    * What is a Computer?
     * How does it understands your commands ?
     * How do you compare with human being
+Everybody gave some interesting answers.
+
 * Some of the things we discussed
     * Computer = Hardware + Software
         * Hardware
@@ -13,7 +15,7 @@
             * Some examples Mouse, keyboard( can be seen) , CPU,Motherboard,Hard disk(need to open the cover)
             * [Visited this link to see more of these](http://www.informationq.com/about-the-basic-parts-of-a-computer-with-devices/)
 
-            * [Some of these which we could not do are here where you can click and see the parts](http://www.kids-online.net/learn/click/table.html)
+            * [you can click and see the parts](http://www.kids-online.net/learn/click/table.html)
 
             * [Some parts inside laptop](https://thumbs.dreamstime.com/z/laptop-inside-view-24503927.jpg)
 
@@ -44,7 +46,10 @@
         
         * Recap of everything done at this point
     * Decimal System
-        *     
+        * All of you know the decimal system which we use on daily basis. Lets take the number: 546. You have learned the number system with place value like ones place, tenth ,hundredth place and so on.
+        * Given above number 546 we can write like : (5*100) + (4*10) + (6*1)
+        * Also can be written as (5* 10²) + (4*10^1) + (6*10^0)
+
 
 
      
