@@ -48,7 +48,41 @@ Everybody gave some interesting answers.
     * Decimal System
         * All of you know the decimal system which we use on daily basis. Lets take the number: 546. You have learned the number system with place value like ones place, tenth ,hundredth place and so on.
         * Given above number 546 we can write like : (5*100) + (4*10) + (6*1)
-        * Also can be written as (5* 10²) + (4*10^1) + (6*10^0)
+        * Also can be written as (5* 10^2) + (4*10^1) + (6*10^0)
+        * In this system every number is between 0-9 (total 10 numbers) and base called 10. Deca is 10 and hence it is called __decimal__
+
+    * Binary
+        * Lets consider different number system where you have only two choices which are either 1 or 0 (only 2 numbers you can use) and base is 2 (instead of 10 as in decimal)
+
+        * for example 101  and this can be written as (1*2^2) + (0* 2^1) + (1* 2^0)  ( see the pattern as decimal here we have 2 instead of base and either 0/1 instead of 0-9)
+
+        * The 101 value which is binary value will will be 5 in decimal (see above where you can simplify)
+        * To convert binary to decimal
+            * expand each digit with its place value and base 2
+            * The place values goes multiple of 2 ( in decimal it is multiple of 10)
+            * 1, 2 , 4, 8, 16, 32, 64, 128 and so on
+            * for example given: 11100111 will be
+            * (1*2^7) + (1*2^6) + (1*2^5) + (0*2^4) + (0*2^3) +(1*2^2) + (1*2^1) + (1*2^0)
+            * 128+64+32+0+0+4+2+1
+            * 231
+        * To convert decimal to binary
+        * split the number in multiple of 2
+        * for ex: 83
+        * 64+16+2+1
+        * remember in binary place values are multiple of 2
+        * in above we have missing 4, 8, 32 means it will be zero in the place
+        * start from last number 
+        * 1 is mean 1
+        * 2 means second place 1
+        * 4 missing meaning third place 0
+        * 8 missing meaning fourth place 0
+        * 16 means fifth place 1
+        * 32 missing means 6th place 0
+        * 64 means 7th place 1
+        * 1010011
+    * Why did we learn binary
+    
+ 
 
 
 
