@@ -81,7 +81,11 @@ Everybody gave some interesting answers.
         * 64 means 7th place 1
         * 1010011
     * Why did we learn binary
-    
+        * What you see on computer (including this text) , web sites, videos , pictures cannot be understand by basic computers. It is the Software ( also called Programs, Applications) making the things easy for you. The basic computer understands only binary meaning 1 or 0. How come then Software is the one understands them. How come they understand? For that you need to under stand standards. How many alphabets we have including capital letters? 52 (26*2) and then some mathematical symbols (+, - , %, * etc.,) , and some punctuations and all put together they are less than 128. They developed some kind of code words like __A__ is __65__ , __B__ is __66__ , __a__ is __97__ where every computer interprets the same way and this is called [ASCII](https://msdn.microsoft.com/en-us/library/60ecse8t(v=vs.80).aspx) which is __A__ merican __S__ tandard __C__ code for __I__ nformation __I__ nterchange. Now for computer everything is numbers. For example lets say __HELLO__ which in number becomes (72 69 76 76 79) [ASCII] (https://msdn.microsoft.com/en-us/library/60ecse8t(v=vs.80).aspx)
+        Now convert __HELLO__ which becomes 72 69 76 76 79 and then convert this in to binary (you learned above to convert) which becomes __1001000__ __1000101__ __1001100__ __1001100__ __1001111__
+        Still how these 1/0 will be understood by computer? Lets say I have given 8 electric bulbs and ask you to put next to each other. Lets say they are all plugged in and you can turn them __on__ or __off__ with a switch. If __OFF__ say the number is __0__ and __ON__ it is __1__. Now in order to represent __76__ you can make the bulbs 
+
+        ![72](https://github.com/sairamaj/programmingclass/blob/master/72.png)
  
 
 
