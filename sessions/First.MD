@@ -4,7 +4,7 @@
 # Computer fundamentals
 * We asked some questions about what it means by a Computer
     * What is a Computer?
-    * How does it understands your commands ?
+    * How does it understand your commands?
     * How do you compare with human being
 Everybody gave some interesting answers.
 
