@@ -72,14 +72,14 @@ Everybody gave some interesting answers.
             * remember in binary place values are multiple of 2
             * in above we have missing 4, 8, 32 means it will be zero in the place
             * start from last number 
-            * 1 is mean 1
-            * 2 means second place 1
-            * 4 missing meaning third place 0
-            * 8 missing meaning fourth place 0
-            * 16 means fifth place 1
-            * 32 missing means 6th place 0
-            * 64 means 7th place 1
-            * 1010011
+            * 1 is mean 1 ( __1__)
+            * 2 means second place 1 ( __11__ )
+            * 4 missing meaning third place 0 ( __011__ )
+            * 8 missing meaning fourth place 0 ( __0011__ )
+            * 16 means fifth place 1 ( __10011__)
+            * 32 missing means 6th place 0 ( __010011__)
+            * 64 means 7th place 1 ( __1010011__)
+            * __1010011__
     * Why did we learn binary
         * What you see on computer (including this text) , web sites, videos , pictures cannot be understand by basic computers. It is the Software ( also called Programs, Applications) making the things easy for you. The basic computer understands only binary meaning 1 or 0. How come then Software is the one understand them. For that you need to under stand standards. How many alphabets we have including capital letters? 52 (26*2) and then some mathematical symbols (+, - , %, * etc.,) , and some punctuations and all put together they are less than 128. They developed some kind of code words like __A__ is __65__ , __B__ is __66__ , __a__ is __97__ where every computer interprets the same way and this is called [ASCII](https://msdn.microsoft.com/en-us/library/60ecse8t(v=vs.80).aspx) which is __A__ merican __S__ tandard __C__ code for __I__ nformation __I__ nterchange. Now for computer everything is numbers. For example lets say __HELLO__ which in number becomes (72 69 76 76 79) [See codes here](http://ascii.cl/)
         Now convert __HELLO__ which becomes 72 69 76 76 79 and then convert this in to binary (you learned above to convert) which becomes __1001000__ __1000101__ __1001100__ __1001100__ __1001111__
