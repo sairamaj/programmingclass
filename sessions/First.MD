@@ -85,7 +85,7 @@ Everybody gave some interesting answers.
         Now convert __HELLO__ which becomes 72 69 76 76 79 and then convert this in to binary (you learned above to convert) which becomes __1001000__ __1000101__ __1001100__ __1001100__ __1001111__
         Still how these 1/0 will be understood by computer? Lets say I have given 8 electric bulbs and ask you to put next to each other. Lets say they are all plugged in and you can turn them __on__ or __off__ with a switch. If __OFF__ say the number is __0__ and __ON__ it is __1__. Now in order to represent __76__ you can make the bulbs 
 
-        ![72](https://github.com/sairamaj/programmingclass/blob/master/72.png)
+        ![72](https://github.com/sairamaj/programmingclass/blob/master/images/72.png)
  
 
 
