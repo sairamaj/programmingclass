@@ -36,10 +36,41 @@ If you see above 8 bits can carry 256 values which are plenty for alphabets+numb
   Right click on edit box where it says __Type here to search__ 
   ![totaskmanager](https://github.com/sairamaj/programmingclass/blob/master/images/totaskmanager.png) 
 
+### Hard disk
+  Lets find out how much hard disk each one had.
+  Press  ![windowkey](https://github.com/sairamaj/programmingclass/blob/master/images/windowskey.png) + E and you wll see the below diagram
+
+  ![fileexplorer](https://github.com/sairamaj/programmingclass/blob/master/images/fileexplorer.png)
+
+  on C drive (you should see on the left side) right click and select Properties
+
+![driveproperties](https://github.com/sairamaj/programmingclass/blob/master/images/driveproperties.png)
+
+![disksize](https://github.com/sairamaj/programmingclass/blob/master/images/disksize.png)
+
+### Question?
+  Why we have less (like 16GB on RAM) and high on hard disk (500GB)?
+
+  Recollect about __RAM__ which is used for scratch pad during computer working and __HardDisk__ used for permanent storage like your photos, movies etc., We need higher on hard disk for this items to store permanently.
+
+  ### Folders and Files
+
+  ### Command Prompt
+
+  ### Hello World Java
+  #### Eclipse
+  
+
+
+
+  
+  
+
+
   go to __Performance__ tab and you should see below one.
 
   ![memoryintaskmanager](https://github.com/sairamaj/programmingclass/blob/master/images/memoryintaskmanager.png)
-   
+
 
 
 
