@@ -54,12 +54,57 @@ If you see above 8 bits can carry 256 values which are plenty for alphabets+numb
   Recollect about __RAM__ which is used for scratch pad during computer working and __HardDisk__ used for permanent storage like your photos, movies etc., We need higher on hard disk for this items to store permanently.
 
   ### Folders and Files
+   *  __file__ is group of bytes ( you may see characters, numbers but they are stored in binary which you already know). They have different types of files in windows.  __.txt__  is text file which you can create using __notepad.exe__ which is another kind of file __.exe__ (Software/Program/Application also in windows called executable). Executable (__.exe__) are programs which you can use to do some stuff. Some of the executables in windows are __notepad.exe__ (creating text files), __cmd.exe__ (command prompt where you can type windows command), __chome.exe__ (browser) , __calc.exe__ (calculator). There are __.png__, __.jpg__ picture files, __.mp4__ videos, __.html__ (HTML files).
+   
+   * __folder__ is collection of __files__ and also can contain __folders__
+
+   * Below we can see __class__ contains 2 folders __english__ , __math__ and text file __hello.txt__. __math__ folder contains anothe folder __algebra__ and soon.
+        
+    ![foldersandfiles](https://github.com/sairamaj/programmingclass/blob/master/images/foldersandfiles.png)
+
+    One can create folders using file explorer  like below
+    ![createfolder](https://github.com/sairamaj/programmingclass/blob/master/images/createfolder.png)
 
   ### Command Prompt
+    Command prompt is where you can type commands to do some stuff in windows. Type windows key ![windowkey](https://github.com/sairamaj/programmingclass/blob/master/images/windowskey.png) + R to get Run window
+
+    ![runwindow](https://github.com/sairamaj/programmingclass/blob/master/images/runwindow.png)
+ 
+ and type __cmd__ to open command window like below
+ ![commandwindow](https://github.com/sairamaj/programmingclass/blob/master/images/commandwindow.png)
+
+ When you open you might be different directory and type __cd\\__ to get to root.
+
+ Type the command like below
+ 
+ ![commandwindowwithdirectories](https://github.com/sairamaj/programmingclass/blob/master/images/commandwindowwithdirectories.png)
+
+ Above __md__ is to create directory and __cd__ is to change the directory. __directory__ and __folder__ meaning the same in windows.
+ 
+##### Absolute Path
+ The complete directory when you are in 0709 is c:\class\math\algebra\0709. you can go to root at any time by typing __c:\\__ at any place. Also you can go to any directory from anywhere by completely typing the path.
+ for example if you are in c:\class\math\algebra\0709 and want to go to english you can go by typing c:\class\english like below
+
+ ![cdwithcompletepath](https://github.com/sairamaj/programmingclass/blob/master/images/cdwithcompletepath.png)
+
+ ##### Relative Path
+ Also you can use relative path like below
+ ![cdwithrelativepath](https://github.com/sairamaj/programmingclass/blob/master/images/cdwithrelativepath.png)
+
+ Above __..__ is going to parent ( 0709 directory parent is algebra and algebra parent is math)
+ 
+
+ 
+
+ 
+
+
+ 
+ 
 
   ### Hello World Java
   #### Eclipse
-  
+
 
 
 
