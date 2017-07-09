@@ -36,6 +36,10 @@ If you see above 8 bits can carry 256 values which are plenty for alphabets+numb
   Right click on edit box where it says __Type here to search__ 
   ![totaskmanager](https://github.com/sairamaj/programmingclass/blob/master/images/totaskmanager.png) 
 
+  go to __Performance__ tab and you should see below one.
+
+![memoryintaskmanager](https://github.com/sairamaj/programmingclass/blob/master/images/memoryintaskmanager.png)
+
 ### Hard disk
   Lets find out how much hard disk each one had.
   Press  ![windowkey](https://github.com/sairamaj/programmingclass/blob/master/images/windowskey.png) + E and you wll see the below diagram
@@ -71,6 +75,7 @@ If you see above 8 bits can carry 256 values which are plenty for alphabets+numb
 ![runwindow](https://github.com/sairamaj/programmingclass/blob/master/images/runwindow.png)
  
  and type __cmd__ to open command window like below
+
 ![commandwindow](https://github.com/sairamaj/programmingclass/blob/master/images/commandwindow.png)
 
  When you open you might be different directory and type __cd\\__ to get to root.
@@ -91,19 +96,32 @@ If you see above 8 bits can carry 256 values which are plenty for alphabets+numb
  Also you can use relative path like below
  ![cdwithrelativepath](https://github.com/sairamaj/programmingclass/blob/master/images/cdwithrelativepath.png)
 
- Above __..__ is going to parent ( 0709 directory parent is algebra and algebra parent is math)
+Above __..__ is going to parent ( __0709__ directory parent is __algebra__ and __algebra__ parent is __math__)
 
+### Hello World Java
+    Finally we are ready for our first java program. 
+#### Eclipse
+Eclipse is another Software where we can use to develop our own programs(software). Eclipse is diffrent kind of program where it is used to develop again programs compared to other programs like notepad, calc where we use them. Thats why we call them as __IDE__ (__I__ nteractive __D__ evelopment __E__ nvironment)
+To install software [Install Eclipse](https://eclipse.org/downloads/eclipse-packages/?show_instructions=TRUE)
 
- 
+Run Eclipse by searching Eclipse in windows 10 ( or by running through Programs)
+![launcheclipse](https://github.com/sairamaj/programmingclass/blob/master/images/launcheclipse.png)
 
- 
+#### Creating Java Project
+![createjavaproject](https://github.com/sairamaj/programmingclass/blob/master/images/createjavaproject.png)
+![HelloWorldJava](https://github.com/sairamaj/programmingclass/blob/master/images/HelloWorldJava.png)
 
+#### Creating Java Class
+![createjavaclass](https://github.com/sairamaj/programmingclass/blob/master/images/createjavaclass.png)
+![createjavaclass2](https://github.com/sairamaj/programmingclass/blob/master/images/createjavaclass2.png)
 
- 
- 
+__Note__ Don't forget to put check mark for __public static void main(String[] args)__
 
-  ### Hello World Java
-  #### Eclipse
+#### Adding HelloWorld 
+
+#### Running your program
+#### Analyzing your first program
+
 
 
 
@@ -112,9 +130,6 @@ If you see above 8 bits can carry 256 values which are plenty for alphabets+numb
   
 
 
-  go to __Performance__ tab and you should see below one.
-
-  ![memoryintaskmanager](https://github.com/sairamaj/programmingclass/blob/master/images/memoryintaskmanager.png)
 
 
 
