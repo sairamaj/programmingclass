@@ -16,12 +16,30 @@ We have defined __bit__ which is one binary digit which is smallest data in comp
 If you see above 8 bits can carry 256 values which are plenty for alphabets+numbers+other characters. All [ASCII](http://ascii.cl/) can fit in to these 256 values. Earlier computers grouped 8 bits and called as __Byte__
 
 
-   |      info                      |     description                                            | 
-   | ----------------------------   | ---------------------------------------------------------- |
-   |     8 bits                     |     1 bytes                                                |
-   |  1024 bytes    (10^3)          |     1 Kilo byte  ( it is no 1000 as it is exponent of 2)   |
-   |  1024*1024 bytes  (10^6)       |     1 Mega byte                                            |
-   |  1024*1024*1024 bytes  (10^9)  |     1 Giga byte                                            |
+   |      info                       |     description                                            | 
+   | ----------------------------    | ---------------------------------------------------------- |
+   |     8 bits                      |     1 bytes                                                |
+   |  1024 bytes    (10^3)           |     1 Kilo byte  ( it is no 1000 as it is exponent of 2)   |
+   |  1024*1024 bytes  (10^6)        |     1 Mega byte                                            |
+   |  1024 * 1024 * 1024 bytes (10^9)|     1 Giga byte                                            |
+
+## Windows OS
+  As computer is our tool to develop programs we need to know the details of our computer. We will be learning some basic details and in the future we will be learning some advanced concepts and also other operating systems like OSX , Linux etc.,
+
+  Lets find out what is the memory and hard disk spaces we have on each computer.
+
+  Windows 10 press windows key button  ![windowkey](https://github.com/sairamaj/programmingclass/blob/master/images/windowskey.png) and then start typing __winver__. You will see the below screen. 
+
+![windowkey](https://github.com/sairamaj/programmingclass/blob/master/images/winver.png)
+
+### Memory
+  Right click on edit box where it says __Type here to search__ 
+  ![totaskmanager](https://github.com/sairamaj/programmingclass/blob/master/images/totaskmanager.png) 
+
+  go to __Performance__ tab and you should see below one.
+
+  ![memoryintaskmanager](https://github.com/sairamaj/programmingclass/blob/master/images/memoryintaskmanager.png)
+   
 
 
 
