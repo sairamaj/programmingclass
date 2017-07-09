@@ -60,18 +60,18 @@ If you see above 8 bits can carry 256 values which are plenty for alphabets+numb
 
    * Below we can see __class__ contains 2 folders __english__ , __math__ and text file __hello.txt__. __math__ folder contains anothe folder __algebra__ and soon.
         
-    ![foldersandfiles](https://github.com/sairamaj/programmingclass/blob/master/images/foldersandfiles.png)
+![foldersandfiles](https://github.com/sairamaj/programmingclass/blob/master/images/foldersandfiles.png)
 
     One can create folders using file explorer  like below
-    ![createfolder](https://github.com/sairamaj/programmingclass/blob/master/images/createfolder.png)
+![createfolder](https://github.com/sairamaj/programmingclass/blob/master/images/createfolder.png)
 
   ### Command Prompt
     Command prompt is where you can type commands to do some stuff in windows. Type windows key ![windowkey](https://github.com/sairamaj/programmingclass/blob/master/images/windowskey.png) + R to get Run window
 
-    ![runwindow](https://github.com/sairamaj/programmingclass/blob/master/images/runwindow.png)
+![runwindow](https://github.com/sairamaj/programmingclass/blob/master/images/runwindow.png)
  
  and type __cmd__ to open command window like below
- ![commandwindow](https://github.com/sairamaj/programmingclass/blob/master/images/commandwindow.png)
+![commandwindow](https://github.com/sairamaj/programmingclass/blob/master/images/commandwindow.png)
 
  When you open you might be different directory and type __cd\\__ to get to root.
 
@@ -92,7 +92,7 @@ If you see above 8 bits can carry 256 values which are plenty for alphabets+numb
  ![cdwithrelativepath](https://github.com/sairamaj/programmingclass/blob/master/images/cdwithrelativepath.png)
 
  Above __..__ is going to parent ( 0709 directory parent is algebra and algebra parent is math)
- 
+
 
  
 
