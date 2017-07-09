@@ -16,9 +16,11 @@ We have defined __bit__ which is one binary digit which is smallest data in comp
 If you see above 8 bits can carry 256 values which are plenty for alphabets+numbers+other characters. All [ASCII](http://ascii.cl/) can fit in to these 256 values. Earlier computers grouped 8 bits and called as __Byte__
 
 
-   |     8 bits                     |     1 bytes
+   |     8 bits                     |     1 bytes                                                |
+   | -----------------------------  | ---------------------------------------------------------- |
    |  1024 bytes    (10^3)          |     1 Kilo byte  ( it is no 1000 as it is exponent of 2)
    |  1024*1024 bytes  (10^6)       |     1 Mega byte
    |  1024*1024*1024 bytes  (10^9)  |     1 Giga byte
-
    
+
+
