@@ -117,7 +117,37 @@ Run Eclipse by searching Eclipse in windows 10 ( or by running through Programs)
 
 __Note__ Don't forget to put check mark for __public static void main(String[] args)__
 
+
 #### Adding HelloWorld 
+
+__Note__ sometimes you may not see the editor and you can click small icon which says __java__ on left side like below
+
+![openjavawindow](https://github.com/sairamaj/programmingclass/blob/master/images/openjavawindow.png)
+
+( we will know more about different commands in Eclipse next class)
+
+Type the following txt in Helloworld.java
+```java
+    System.out.println("Hello World");
+```
+Click run icon 
+
+![runhelloworld](https://github.com/sairamaj/programmingclass/blob/master/images/runhelloworld.png)
+
+and you should see "Hello World" printed.
+
+__Note__ If you don't see __Run__ button then you need to activate tool bar by clicking  Windows->Appearance->Show toolbar like below
+
+![showtoolbar](https://github.com/sairamaj/programmingclass/blob/master/images/showtoolbar.png)
+
+#### main
+   We talked about program is nothing but a series of instructions. When you have millions of instructions ( typical program may contain lot of  instructions) where we should start? It is the __main__ where a java program starts. Program is simply starts from main and follows whatever you have asked to do and in above case the instruction is __print__ and the __data__ is __Hello World__
+
+We will learn data types and how this program is converted in to actual binary (remember computer CPU, RAM understands binary not the english you type.)
+
+
+
+
 
 #### Running your program
 #### Analyzing your first program
