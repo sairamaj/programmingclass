@@ -1,6 +1,9 @@
 Today we have recapped last week session which are hardware,software,binary system etc.,
 
-We have defined __bit__ which is one binary digit which is smallest data in computer system which can take either 0 or 1. 2 bits can carry 4 values which are 00(0), 01(1), 10(2), 11(3).
+We have defined __bit__ which is one binary digit , smallest data in computer system and can take either 0 or 1. 2 bits can carry 4 values which are 00(0), 01(1), 10(2), 11(3).
+
+Below one shows the number of bits and their capacity (how many values they can take)
+
 
    |    number of bits   |  number of values     |   values |
    | ------------------  | -----------------     |----------|
