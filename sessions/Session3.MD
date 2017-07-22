@@ -17,18 +17,18 @@ First you need to create account and you can view the details here: [Github basi
 
 If you follow the above link and see the screenshots all you need to remember is following
 
-#### Get repository to your local machine
+### Get repository to your local machine
 * A repository is collection of files ( can contain folders) 
 * go to github.com and login and go to repository
 * for example a repository __basicjava__ for my account will be
     https://github.com/sairamaj/basicjava.git
-    (see the pattern above)
+    (see the pattern here)
     * https
     * github.com
     * account name ( here sairamaj is my account)
     * repository name (basicjava)
     * .git
-    you can get this information from ![getrepositoryurl](https://github.com/sairamaj/programmingclass/blob/master/images/github/getrepositoryurl.png)
+    you can get this information from ![getrepositoryurl](https://github.com/sairamaj/programmingclass/blob/master/images/getrepositoryurl.png)
 
 on your local machine go to command prompt and type the following command 
 * cd \
@@ -37,13 +37,13 @@ on your local machine go to command prompt and type the following command
 * git clone __aboveurl__
 * like below
 
-![clonerepository](https://github.com/sairamaj/programmingclass/blob/master/images/github/clonerepository.png)
+![clonerepository](https://github.com/sairamaj/programmingclass/blob/master/images/clonerepository.png)
 
 This will bring whatever is there in the repository on to your machine.
 
 __Note__: When you have empty files in your repository you may see some warnings but thats normal.
 
-#### Adding new files
+### Adding new files
 Lets say you want to add new files in to this repository. for example you are creating session3.txt for this session.
 
 * type __notepad session3.txt__
@@ -60,7 +60,7 @@ Lets say you want to add new files in to this repository. for example you are cr
 
 At this time you can go to your github account and see whether your newly added files existing there.
 
-#### Modifying the files
+### Modifying the files
 The procedure is same except instead of creating new file you will be modifying.
 * open command prompt
 * cd \
@@ -78,7 +78,7 @@ The procedure is same except instead of creating new file you will be modifying.
 * use __del__ command ( or use file explorer)
 * repeat the above __git__ commands
 
-#### Summary
+### Summary
 
    |    command                         |  description
    | ------------------                 | -----------------    
