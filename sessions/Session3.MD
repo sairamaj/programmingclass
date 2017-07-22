@@ -28,6 +28,69 @@ If you follow the above link and see the screenshots all you need to remember is
     * account name ( here sairamaj is my account)
     * repository name (basicjava)
     * .git
-    
+    you can get this information from ![getrepositoryurl](https://github.com/sairamaj/programmingclass/blob/master/images/github/getrepositoryurl.png)
+
+on your local machine go to command prompt and type the following command 
+* cd \
+* md gitlearn
+* cd gitlearn
+* git clone __aboveurl__
+* like below
+
+![clonerepository](https://github.com/sairamaj/programmingclass/blob/master/images/github/clonerepository.png)
+
+This will bring whatever is there in the repository on to your machine.
+
+__Note__: When you have empty files in your repository you may see some warnings but thats normal.
+
+#### Adding new files
+Lets say you want to add new files in to this repository. for example you are creating session3.txt for this session.
+
+* type __notepad session3.txt__
+* in notepad type your own notes
+* use File->Save option to save 
+* Quit the notepad
+
+* now type __git status__ this command will show any changes done in red color indicating some changes  you have done.
+
+* type  __git add &ast;__ to add these files to your __local__ git (note: you are files on local machine still)
+* next type __git status__ again to see all the files are shown in green.
+* type __git commit -m "some comment"__ This will put in to local git ( again your files are still in on  your machine)
+* type __git push origin master__ to finally push these changes to  your github account.
+
+At this time you can go to your github account and see whether your newly added files existing there.
+
+#### Modifying the files
+The procedure is same except instead of creating new file you will be modifying.
+* open command prompt
+* cd \
+* cd gitlearn\basicjava
+* notepad session3.txt
+* modify with new notes
+* File->Save
+* quit notepad
+* __git status__
+* __git add &ast;__
+* __git commit -m "comment"__
+* __git push origin master__
+
+#### Deleting the files
+* use __del__ command ( or use file explorer)
+* repeat the above __git__ commands
+
+#### Summary
+
+   |    command                         |  description
+   | ------------------                 | -----------------    
+   |     __git status__                 |     shows the status of any additions/modifications/deletions
+   |     __git add &ast;__              |     adds the files to local
+   |     __git commit -m"some comment'__|     commits to local repository
+   |     __git push origin master__     |     **finally they are in your github account**
+
+
+
+
+
+
 
 
