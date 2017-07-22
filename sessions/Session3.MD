@@ -28,6 +28,7 @@ If you follow the above link and see the screenshots all you need to remember is
     * account name ( here sairamaj is my account)
     * repository name (basicjava)
     * .git
+    
     you can get this information from ![getrepositoryurl](https://github.com/sairamaj/programmingclass/blob/master/images/getrepositoryurl.png)
 
 on your local machine go to command prompt and type the following command 
@@ -88,6 +89,22 @@ The procedure is same except instead of creating new file you will be modifying.
    |     __git push origin master__     |     **finally they are in your github account**
 
 
+# Making Eclipse Workspace to basicjava repository for checking the projects in to github
+We can make Eclipse to create java projects in the __basicjava__ repository so that whenever we create new project for our java learning we can easily check them.
+
+## Eclipse
+* Launch eclipse
+* Depending upon your settings you may be asked to select the workspace when you open like below
+
+    ![selectworkspace](https://github.com/sairamaj/programmingclass/blob/master/images/selectworkspace.png)
+
+* If not you can use File-> 
+    ![selectworkspace](https://github.com/sairamaj/programmingclass/blob/master/images/selectworkspace2.png)
+
+if you create a java project with this workspace, you can checkin to the github by following the above commands
+Go ahead and create a Helloworld project which has been explained [create helloworld](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD)
+
+After creating the project , go to command prompt and type __git status__ and you should see the directories in red color. Now  you know the drills to make this in to github accont.
 
 
 
