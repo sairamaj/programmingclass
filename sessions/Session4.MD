@@ -140,14 +140,16 @@ Before knowing syntax of __for__ loop, lets take some real life scenario involvi
 Lets say you are about to run in school playground tracks. You have been asked to run for 10 times on the track. 
 
 One time
-    - Before starting the run and entering in to the track, you do some warm ups
-    - Eat banana for instant energy
-    - Put music and ear buds
-    - Start counting your mind (still not finished one round,so you say yourself as zero)
+* Before starting the run and entering in to the track, you do some warm ups
+* Eat banana for instant energy
+* Put music and ear buds
+* Start counting your mind (still not finished one round,so you say yourself as zero)
 
-Check whether 10 rounds are done (you had zero runs so far, so you need to run on track)
+Next
+* Check whether 10 rounds are done (you had zero runs so far, so you need to run on track)
 
-Start Run on track
+Next
+* Start Run on track
 
 After finishing one round 
 * You add 1 to your run count which is 0+1 = 1
@@ -184,7 +186,7 @@ The above program will print running statement as 10 times.
 
 Lets the syntax of __for__ loop
 ```java
-    for( initialiation_onetime ; conditionwhichshouldreturntrueorfalse ; dosomeincrement_whichruns_foreachloop){
+    for( initialiation_onetime ; condition_which_should_return_true_or_false ; do_some_increment_which_runs_for_each_loop){
         somestatements_which_will_execute_aslongas_theconditionis_true
     }
 ```
@@ -230,6 +232,8 @@ condition_which_should_return_true_or_false -> each loop time
 
 do_some_increment_which_runs_for_each_loop -> each loop time.
 
+## Some general Info regarding Java programming
+
 ### Naming of variables
 When naming variables in Java programming, it is best practice give proper good names for easy understanding and readability of the code. 
 
@@ -247,13 +251,13 @@ When naming variables in Java programming, it is best practice give proper good 
     double price;
 ```
 ### Commenting
-One put comments in the code . if you start the line with // and anything followed by is comment and good practice to put your notes in the code
+One can put comments in the code . if you start the line with // and anything followed by is comment and good practice to put your notes in the code
 ```java
     // This loop prints up to 100 numbers.
 ```
 
 ### Indentation
-While editing the program indentation (meaning putting spaces or tabs in section of the code) is important for readability and fixing any errors.
+While editing the program indentation (meaning putting spaces or tabs in section of the code) is important for readability and identifying any mistakes in the code (yes indentation helps readability and hence spotting any errors easily).
 
 ####  some bad indentation
 ![badindentation](https://github.com/sairamaj/programmingclass/blob/master/images/badindentation.png)
@@ -270,7 +274,7 @@ Remember __syntax__ is grammar and if you don't follow proper grammar then Java 
 
 ![syntaxerrorsemicolonmissing](https://github.com/sairamaj/programmingclass/blob/master/images/syntaxerrorsemicolonmissing.png)
 
-#### Matching curly brackets ({})
+### Matching curly brackets ( { } )
 
 In Java a block is defined between two curly brackets which starts with __{__ and ends with __}__. It is important to match them , i.e every open __{__ should have __}__. If not you will get errors.
 
@@ -279,6 +283,7 @@ In Java a block is defined between two curly brackets which starts with __{__ an
 ![curlybracketsmatchin2](https://github.com/sairamaj/programmingclass/blob/master/images/curlybracketsmatchin2.png)
 
 ## Homework
+* Makes notes out of this and check-in in your git hub account.
 * Write a program to show like below
     * age is less than 13 -> you are kid
     * age is between 13 and 19 -> you are teen
