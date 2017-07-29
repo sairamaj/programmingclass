@@ -129,3 +129,183 @@ In Java programming
         System.out.println("Sorry, please wait till you get 15");
     }
 ```
+
+### Looping(repetitions)
+    Just like we have some repetitions in real live we have some repetitions in programming too. There are different ways of doing repetitions in programming.
+
+#### For loop
+One such loop in Java programming is __for__ loop.
+Before knowing syntax of __for__ loop lets take some real life scenario involving looping.
+Lets say you are about to run in school playground tracks. You have been asked to run for 10 times on the track. 
+
+One time
+    - Before starting the run and entering in to the track, you do some warm ups
+    - Eat banana for instant energy
+    - Put music and ear buds
+    - Start counting your mind (still not finished one round,so you say yourself as zero)
+
+Check whether 10 rounds are done (you had zero runs so far, so you need to run on track)
+Start Run on track
+After finishing one round 
+    - You add 1 to your run count which is 0+1 = 1
+    - Then check whether you have finished 10 runs
+    - As you have not reached 10 you will start run on track again.
+You go for 2nd round
+    - You add 1 to your run count which is 1+1 = 2
+    - Then check whether you have finished 10 runs (only 2 runs )
+    - As you have not reached 10 you will start run on track again.
+You go for 3rd round
+    .. so you repeat these 
+....
+Now you are on run 9
+    - You add 1 to your run count which is 9+1 = 10
+    - Then check whether you have finished 10 runs 
+    - Yes you are done 
+Stop running at this time.
+
+Lets see how we can do this in Java programming
+
+```java
+    int i;  // For counting in loops usually variable name 'i' is used 
+
+    for(i=0 ; i<10 ; i++){
+        System.out.println("running :" + (i+1));
+    }
+
+```
+The above program will print running statement as 10 times.
+
+Lets the syntax of __for__ loop
+```java
+    for( initialiation_onetime ; conditionwhichshouldreturntrueorfalse ; dosomeincrement_whichruns_foreachloop){
+        somestatements_which_will_execute_aslongas_theconditionis_true
+    }
+```
+Lets see how computer runs the above __for__ program 
+
+Step-1  (only one time)
+  
+ * i=0 
+
+Step-2
+  
+ * i < 10  ( is 0<10, yes __true__)
+
+Step-3
+
+ * System.out.println("running " + (i+1))    (prints "running 1")
+
+Step-4 
+
+ * i=i+1        ( i will become 1)
+
+Step-5 
+
+ * i<10 ( is 1<10 , yes __true__)
+
+Step-6
+
+ * * System.out.println("running " + (i+1))    (prints "running 2")
+
+ ...
+ 
+ ...
+
+ ...
+
+Finally when i becomes 10 and the condition 10<10 becomes __false__ and thats where the loop stops.
+
+so if you observe the 3 parts in for loop are
+
+initialiation   -> one time
+
+conditionwhichshouldreturntrueorfalse -> each loop time
+
+dosomeincrement_whichruns_foreachloop -> each loop time.
+
+Another way of looking this in pictorial form is
+![forloop](https://github.com/sairamaj/programmingclass/blob/master/images/forloopflowchart.png)
+
+### Naming of variables
+    when naming of variables in Java programming it is best practice for easy to understand give proper good names. 
+######  some bad examples
+```java
+    int x;
+    String y;
+    double z;
+```
+######  some good examples
+```java
+    int age;
+    String name;
+    double price;
+```
+### Commenting
+* One put comments in the code . if you start the line with // and anything followed by is comment and good practice to put your notes in the code
+```java
+    
+    // This loop prints up to 100 numbers.
+
+```
+
+### Indentation
+    While editing the program indentation (meaning putting spaces or tabs in section of the code) is important for readability and fixing any errors.
+
+######  some bad indentation
+![badindentation](https://github.com/sairamaj/programmingclass/blob/master/images/badindentation.png)
+
+######  some good indentation
+![goodindentation](https://github.com/sairamaj/programmingclass/blob/master/images/goodindentation.png)
+
+__Hint__:  Use Ctrl+Shift+F (on Windows and on mac Ctrl->Command) to do __auto indent__ which does indent properly.
+
+### Fixing Syntax errors
+Remember __syntax__ is grammar and if you don't follow proper grammar then Java program will complain. Eclipse which is IDE ( Interactive Development Environment ) for Java projects shows a small red circle showing some error. One can click that red circle to see what is the actual error and fix them.
+
+![syntaxerrorvariablenotdefined](https://github.com/sairamaj/programmingclass/blob/master/images/syntaxerrorvariablenotdefined.png)
+
+![syntaxerrorsemicolonmissing](https://github.com/sairamaj/programmingclass/blob/master/images/syntaxerrorsemicolonmissing.png)
+
+#### Matching curly brackets ({})
+
+In Java a block is defined between two curly brackets which starts with __{__ and ends with __}__. It is important to match them , i.e every open __{__ should have __}__. If not you will get errors.
+
+![curlybracketsmatchin1](https://github.com/sairamaj/programmingclass/blob/master/images/curlybracketsmatchin1.png)
+
+![curlybracketsmatchin2](https://github.com/sairamaj/programmingclass/blob/master/images/curlybracketsmatchin2.png)
+
+## Homework
+* Write a program to show like below
+    * age is less than 13 -> you are kid
+    * age is between 13 and 19 -> you are teen
+    * age is between 20 and 60 -> you are adult
+    * age is above 60 -> senior citizen
+
+    __Hint__: to do multiple comparison one can use like below
+        __age >=13 && age <=19__   ( here __&&__ is like __AND__ meaning both  >=13 and <=19 should be true)
+
+* Write a program to print numbers starting from 5 to 100 in step of 10. i.e program should print
+    * 5, 15, 25, 35, 45, 55, 65, 75, 85, 95
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
