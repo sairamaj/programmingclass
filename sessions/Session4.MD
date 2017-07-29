@@ -1,4 +1,4 @@
-Before going on to this session we have verified whether eclipse workspace is pointing towards basicjava repository so that any projects we create here can be checked in to github.
+Before going on to this session, we have verified whether eclipse workspace is pointing towards basicjava repository directory, so that any projects we create here can be checked in to github.
 
 ## Variables
     We are used to create variables in algebra like below
@@ -34,7 +34,7 @@ Before going on to this session we have verified whether eclipse workspace is po
 
      If you observe above data you can group them in 3 different categories
      (14,10)                   -> Numbers
-
+     
      ("sairama", "Tucson")     -> Strings(series of alphabets)
 
      (24.50, 2.5)              -> Numbers with decimals
@@ -44,10 +44,12 @@ Before going on to this session we have verified whether eclipse workspace is po
 In Java programming the above sets are given specific name and thats what we call them data type. ( type of the data it represents)
 
 Int      (14,10)   -> Numbers without decimals
+
 String   ("sairama", "Tucson")
+
 double   (24.50, 2.5)  -> Numbers with decimals.
 
-In algebra you don't specify type but in Java programming you need to tell the program what kind of data you need. 
+In algebra you don't specify type, but in Java programming you need to tell the program what kind of data you need. 
 
 ```java
     int         age = 14;
@@ -68,14 +70,14 @@ If you see above we specify in below format
    
    it is grammar to programming just like you have grammar in English language.
 
-   Some of the examples for syntax is every statement in Java will end with a ';' (semicolon)
+   Some of the examples for syntax is every statement in Java will end with a __';'__ (semicolon)
    
    Another example is declaring variables like above where we start with __datatype__ followed by __space__ then __variable__ and then __=__ followed by __value__ and ends with __;__ (int age = 14;)
 
    Over the period of time we will be learning more syntax in Java.
 
 ### If statement
-In real life you get different paths based on certain conditions. For example if you are >15 then you can get driver permit. If the day is Sunday or Saturday you will not have school. In Java programming also you can conditions and do things only that conditions match. This is represented by __if__ and __else if__ and __else__ statements.
+In real life you get different paths based on certain conditions. For example if you are more than 15 years old, then you can get driver permit. If the day is Sunday or Saturday you don't have to go to school. In Java programming also you can conditions and do things only that conditions match. This is represented by __if__ and __else if__ and __else__ statements.
 
 ```java
     int age = 13;
@@ -99,12 +101,12 @@ In above program the syntax is
     }
 ```
 In Java programming certain operators make the statement either true/false (you can think of yes/no). for example in above __age > 15__ the symbol __>__ is used to check for __greater than__ . 
-So you can read the if( age is greater than 15 ) and if this is true(yes) then the block (block starts with __{__ and ends with __}__ )
+So you can read the if( age is greater than 15 ) and if this is true(yes) then the block (block starts with __{__ and ends with __}__ ) will be executed (means program follows the instructions)
 
-Next we have __age == 15__ we have interesting thing. Why __==__ ?. 
+Next we have __age == 15__. Why __==__ ( two equals)?. 
 
 In Java programming 
- when we use single __=__ it is called __assignment__, that __int age = 15__ means we are assigning (setting) value __15__ to variable __age__ of data type __int__. After this the value of variable __age__ will be __15__ and before that it will be __0__ (in Java if you don't specify anything to numbers by default they will be zero).
+ when we use single __=__ it is called __assignment__, that is __int age = 15__ means we are assigning (setting) value __15__ to variable __age__ . After this the value of variable __age__ will be __15__ and before that it will be __0__ (in Java if you don't specify anything to numbers by default they will be zero).
  
  when we use double __==__ it is called __comparison__, that is __age == 15__ means we asking is age __equal__ to 15?. The answer can be either __yes__ (true) or __no__(false). 
 
@@ -125,15 +127,5 @@ In Java programming
         System.out.println("Congratulations. today is the day where you can apply for permit.");
     }else{
         System.out.println("Sorry, please wait till you get 15");
-    }
-```
-In above program the syntax is
-```java
-    if( anything that evaluates to true/false){
-
-    }else if(anything that evaluates to true/false){
-
-    }else{
-        // Anything does not match above.
     }
 ```
