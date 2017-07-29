@@ -1,6 +1,4 @@
-
-    Before going on to this session we have verified whether eclipse workspace is pointing towards basicjava repository so that any projects we create here can be checked in to github.
-
+Before going on to this session we have verified whether eclipse workspace is pointing towards basicjava repository so that any projects we create here can be checked in to github.
 
 ## Variables
     We are used to create variables in algebra like below
@@ -63,7 +61,7 @@ If you see above we specify in below format
    
     Datatype VariableName = value ;
 
-    Strings are represented in double quotes(""). __Note__ : Not variables(ex:name) but their values (ex:"sairama")
+    Strings are represented in double quotes(""). Note : Not variables(ex:name) but their values (ex:"sairama")
 
 ### Syntax
    What is Syntax in Java programming? 
@@ -76,3 +74,66 @@ If you see above we specify in below format
 
    Over the period of time we will be learning more syntax in Java.
 
+### If statement
+In real life you get different paths based on certain conditions. For example if you are >15 then you can get driver permit. If the day is Sunday or Saturday you will not have school. In Java programming also you can conditions and do things only that conditions match. This is represented by __if__ and __else if__ and __else__ statements.
+
+```java
+    int age = 13;
+
+    if( age > 15){
+        System.out.println("you can get drivers permit");
+    }else if( age == 15){
+        System.out.println("Congratulations. today is the day where you can apply for permit.");
+    }else{
+        System.out.println("Sorry, please wait till you get 15");
+    }
+```
+In above program the syntax is
+```java
+    if( anything that evaluates to true/false){
+
+    }else if(anything that evaluates to true/false){
+
+    }else{
+        // Anything does not match above.
+    }
+```
+In Java programming certain operators make the statement either true/false (you can think of yes/no). for example in above __age > 15__ the symbol __>__ is used to check for __greater than__ . 
+So you can read the if( age is greater than 15 ) and if this is true(yes) then the block (block starts with __{__ and ends with __}__ )
+
+Next we have __age == 15__ we have interesting thing. Why __==__ ?. 
+
+In Java programming 
+ when we use single __=__ it is called __assignment__, that __int age = 15__ means we are assigning (setting) value __15__ to variable __age__ of data type __int__. After this the value of variable __age__ will be __15__ and before that it will be __0__ (in Java if you don't specify anything to numbers by default they will be zero).
+ 
+ when we use double __==__ it is called __comparison__, that is __age == 15__ means we asking is age __equal__ to 15?. The answer can be either __yes__ (true) or __no__(false). 
+
+ Both if() and else if() take anything that can become __yes__ or __no__ statements. In future we will see complex conditions but ultimately the entire stuff should be answered to __yes__ or __no__
+
+ One can put multiple statements (instructions, remember we are telling to computer to do some stuff) between __{__ and __}__
+
+ for example:
+
+ ```java
+    int age = 13;
+
+    if( age > 15){
+        System.out.println("you can get drivers permit");
+        System.out.println("you can drive now with an adult next to you");
+        System.out.println("certain restrictions , apply");
+    }else if( age == 15){
+        System.out.println("Congratulations. today is the day where you can apply for permit.");
+    }else{
+        System.out.println("Sorry, please wait till you get 15");
+    }
+```
+In above program the syntax is
+```java
+    if( anything that evaluates to true/false){
+
+    }else if(anything that evaluates to true/false){
+
+    }else{
+        // Anything does not match above.
+    }
+```
