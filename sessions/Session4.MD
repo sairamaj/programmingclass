@@ -14,7 +14,7 @@ Before going on to this session, we have verified whether eclipse workspace is p
 ## Data Types
    The concept of variable is same in Java programming too, where a variable can change at any time.
 
-   Before discussing how we create variables in Java lets discuss following data.
+   Before discussing how we create variables in Java, lets discuss following data.
 
    <pre>
      Q: What is your age?  
@@ -65,7 +65,7 @@ If you see above we specify in below format
 
     Strings are represented in double quotes(""). Note : Not variables(ex:name) but their values (ex:"sairama")
 
-### Syntax
+## Syntax
    What is Syntax in Java programming? 
    
    it is grammar to programming just like you have grammar in English language.
@@ -76,8 +76,8 @@ If you see above we specify in below format
 
    Over the period of time we will be learning more syntax in Java.
 
-### If statement
-In real life you get different paths based on certain conditions. For example if you are more than 15 years old, then you can get driver permit. If the day is Sunday or Saturday you don't have to go to school. In Java programming also you can conditions and do things only that conditions match. This is represented by __if__ and __else if__ and __else__ statements.
+## If statement
+In real life you get different paths based on certain conditions. For example if you are more than 15 years old, then you can get driver permit. If the day is Sunday or Saturday you don't have to go to school. In Java programming also you can conditions and do things only that conditions match. This is represented by __if__ , __else if__ and __else__ statements.
 
 ```java
     int age = 13;
@@ -110,7 +110,7 @@ In Java programming
  
  when we use double __==__ it is called __comparison__, that is __age == 15__ means we asking is age __equal__ to 15?. The answer can be either __yes__ (true) or __no__(false). 
 
- Both if() and else if() take anything that can become __yes__ or __no__ statements. In future we will see complex conditions but ultimately the entire stuff should be answered to __yes__ or __no__
+ Both if() and else if() take anything that can become __yes__ or __no__ statements. In future we will see complex conditions but ultimately the entire stuff ( whatever goes in between __()__ )should be answered to __yes__ or __no__
 
  One can put multiple statements (instructions, remember we are telling to computer to do some stuff) between __{__ and __}__
 
@@ -130,12 +130,13 @@ In Java programming
     }
 ```
 
-### Looping(repetitions)
-    Just like we have some repetitions in real live we have some repetitions in programming too. There are different ways of doing repetitions in programming.
+## Looping(repetitions)
+Just like we have some repetitions in real life, we have some repetitions in programming too. There are different ways of doing repetitions in programming.
 
-#### For loop
+### For loop
 One such loop in Java programming is __for__ loop.
-Before knowing syntax of __for__ loop lets take some real life scenario involving looping.
+Before knowing syntax of __for__ loop, lets take some real life scenario involving looping.
+
 Lets say you are about to run in school playground tracks. You have been asked to run for 10 times on the track. 
 
 One time
@@ -145,22 +146,28 @@ One time
     - Start counting your mind (still not finished one round,so you say yourself as zero)
 
 Check whether 10 rounds are done (you had zero runs so far, so you need to run on track)
+
 Start Run on track
+
 After finishing one round 
-    - You add 1 to your run count which is 0+1 = 1
-    - Then check whether you have finished 10 runs
-    - As you have not reached 10 you will start run on track again.
+* You add 1 to your run count which is 0+1 = 1
+* Then check whether you have finished 10 runs
+* As you have not reached 10 you will start run on track again.
+
 You go for 2nd round
-    - You add 1 to your run count which is 1+1 = 2
-    - Then check whether you have finished 10 runs (only 2 runs )
-    - As you have not reached 10 you will start run on track again.
+* You add 1 to your run count which is 1+1 = 2
+* Then check whether you have finished 10 runs (only 2 runs )
+* As you have not reached 10 you will start run on track again.
+
 You go for 3rd round
     .. so you repeat these 
 ....
+
 Now you are on run 9
-    - You add 1 to your run count which is 9+1 = 10
-    - Then check whether you have finished 10 runs 
-    - Yes you are done 
+* You add 1 to your run count which is 9+1 = 10
+* Then check whether you have finished 10 runs 
+* Yes you are done 
+
 Stop running at this time.
 
 Lets see how we can do this in Java programming
@@ -193,11 +200,11 @@ Step-2
 
 Step-3
 
- * System.out.println("running " + (i+1))    (prints "running 1")
+ * System.out.println("running " + (i+1))    ( __prints "running 1"__)
 
 Step-4 
 
- * i=i+1        ( i will become 1)
+ * i=i+1        ( __i will become 1__)
 
 Step-5 
 
@@ -205,7 +212,7 @@ Step-5
 
 Step-6
 
- * * System.out.println("running " + (i+1))    (prints "running 2")
+ * * System.out.println("running " + (i+1))    (__prints "running 2"__)
 
  ...
  
@@ -219,45 +226,42 @@ so if you observe the 3 parts in for loop are
 
 initialiation   -> one time
 
-conditionwhichshouldreturntrueorfalse -> each loop time
+condition_which_should_return_true_or_false -> each loop time
 
-dosomeincrement_whichruns_foreachloop -> each loop time.
-
-Another way of looking this in pictorial form is
-![forloop](https://github.com/sairamaj/programmingclass/blob/master/images/forloopflowchart.png)
+do_some_increment_which_runs_for_each_loop -> each loop time.
 
 ### Naming of variables
-    when naming of variables in Java programming it is best practice for easy to understand give proper good names. 
-######  some bad examples
+When naming variables in Java programming, it is best practice give proper good names for easy understanding and readability of the code. 
+
+####  some bad examples
+
 ```java
     int x;
     String y;
     double z;
 ```
-######  some good examples
+####  some good examples
 ```java
     int age;
     String name;
     double price;
 ```
 ### Commenting
-* One put comments in the code . if you start the line with // and anything followed by is comment and good practice to put your notes in the code
+One put comments in the code . if you start the line with // and anything followed by is comment and good practice to put your notes in the code
 ```java
-    
     // This loop prints up to 100 numbers.
-
 ```
 
 ### Indentation
-    While editing the program indentation (meaning putting spaces or tabs in section of the code) is important for readability and fixing any errors.
+While editing the program indentation (meaning putting spaces or tabs in section of the code) is important for readability and fixing any errors.
 
-######  some bad indentation
+####  some bad indentation
 ![badindentation](https://github.com/sairamaj/programmingclass/blob/master/images/badindentation.png)
 
-######  some good indentation
+####  some good indentation
 ![goodindentation](https://github.com/sairamaj/programmingclass/blob/master/images/goodindentation.png)
 
-__Hint__:  Use Ctrl+Shift+F (on Windows and on mac Ctrl->Command) to do __auto indent__ which does indent properly.
+__Hint__:  Use Ctrl+Shift+F (on Windows and on mac Ctrl->Command) to do __auto indent__ which indent properly.
 
 ### Fixing Syntax errors
 Remember __syntax__ is grammar and if you don't follow proper grammar then Java program will complain. Eclipse which is IDE ( Interactive Development Environment ) for Java projects shows a small red circle showing some error. One can click that red circle to see what is the actual error and fix them.
