@@ -34,10 +34,11 @@ For example when we discussed about the program to find out minimum and maximum 
     * maximum number is:
 
 #### Step 2
-Forget about the program but how you are going to do solve this.
+Forget about the program and how you are going to do solve this.Think how you solve this on note book.
 Take some sample data and run through your mind.
-For example in above case what happens 2 numbers are __10, 20__ then it should print minimum  number is :__10__ and maximum is __20__. If I give another set like __40, 20__ then it should give minimum number as __20__ and maximum is __40__
-How did you determine which number is minimum and maximum between these 2 numbers. It was not first number always. What you did is you have asked yourself a question , whether first number is less that second number. If YES then minimum is first number otherwise minimum is second number. Usually the questions like this will be come logical conditions like __if__ in programing. you can start typing this in plain English like below
+For example in above case what user inputs 2 numbers as __10, 20__,  then it should print minimum  number is :__10__ and maximum is __20__. If user gives another set like __40, 20__, then it should give minimum number as __20__ and maximum is __40__.
+
+How did you determine which number is minimum and maximum between these 2 numbers. It was not first number always. What you did is, you have asked yourself a question , whether first number is less that second number. If YES then minimum is first number otherwise minimum is second number. Usually the questions like this will become logical conditions like __if__ in programing. you can start typing this in plain English like below
 
     if first number is less than second number then
         minimum = first number
@@ -128,7 +129,7 @@ public class Application {
 As we have learned and did last class __for__ we did some exercise using __for__ loop.
 
 #### Requirement
-    Program should able to take a number from user and should print multiplication table up to 10. 
+Program should able to take a number from user and should print multiplication table up to 10. 
     
     for example if user gives 3 then
         3
@@ -163,8 +164,8 @@ As we have learned __for__ is the for repetition do first the syntax
 
     }
 ```
-* If you know in the first part of __for__ is initialization like __i=0__
-* Second part is condition where till true the loop should continue. __number <= 10__
+* If you know in the first part of __for__ is initialization like __i=1__
+* Second part is condition where as long as condition evaluates true, then loop run. __number <= 10__
 * Third part is increment in this case __i=i+1__
 * Next is body of the for ( in between __{__ and __}__ )
 
@@ -203,19 +204,22 @@ public class Application {
 ```
 
 ### Easy Navigation in Eclipse
+
+We have __Ctrl Shift F__ to format and keep using this to indent your code properly.
+
 You can use short keys to do speed up your coding in windows (also in mac).
 
-    ![accelerationkeys](https://github.com/sairamaj/programmingclass/blob/master/images/accelerationkeys.png)
+![accelerationkeys](https://github.com/sairamaj/programmingclass/blob/master/images/accelerationkeys.png)
 
 If you observe above you can see there is __underline__ for each characters in the menu. What is this means if you press __Alt key__ ( for example __Alt F__ will select the __File__ menu)
 
-    ![filenewjavaproject](https://github.com/sairamaj/programmingclass/blob/master/images/filenewjavaproject.png)
+![filenewjavaproject](https://github.com/sairamaj/programmingclass/blob/master/images/filenewjavaproject.png)
 
 By typing __Alt F__  and pressing Enter twice you will be in creating new Java project. 
 
 ### Homework
 * Create session5 notes and check it in notes directory as session5.txt
-* Create a program which tells the school type based on user entered.
+* Create a program which tells the school type based on user entered grade.
    * Project name: SchoolTypeApp
    * Class name: Application.java
    * Should Ask the user about the grade
@@ -224,7 +228,7 @@ By typing __Alt F__  and pressing Enter twice you will be in creating new Java p
      * between 6th and 8 should print __Middle School__
      * between 9th and 12th should print __High School__
      * above 12th should print as __College__
-* Create program which will tell how man calories will burn on total runs
+* Create program which will tell how many minutes will take for total runs
     * Project name: RunTimeCalculator
     * Class name: Applcation.java
     * Ask the user
