@@ -124,3 +124,121 @@ public class Application {
 
 ```
 
+### Program using for loop
+As we have learned and did last class __for__ we did some exercise using __for__ loop.
+
+#### Requirement
+    Program should able to take a number from user and should print multiplication table up to 10. 
+    
+    for example if user gives 3 then
+        3
+        6
+        9
+        12
+        ...
+        ...
+        30
+
+    enhanced form of this program should print in the following format
+       3 * 1  = 3
+       3 * 2  = 6
+       3 * 3  = 9
+       3 * 4  = 12
+       ...
+       ...
+       3 * 10  = 30
+
+#### Pseudo logic
+    
+    Here we need to print 10 times starting from 1
+    We can think of something like this
+    number = user input
+    starting from 1 to 10
+        number * counter
+
+#### Actual program logic
+As we have learned __for__ is the for repetition do first the syntax
+```java
+    for( ;   ;  ){
+
+    }
+```
+* If you know in the first part of __for__ is initialization like __i=0__
+* Second part is condition where till true the loop should continue. __number <= 10__
+* Third part is increment in this case __i=i+1__
+* Next is body of the for ( in between __{__ and __}__ )
+
+With the above thing in mind the final program will be
+```java
+import java.util.*;
+public class Application {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("table number:");
+		int number = scanner.nextInt();
+		for(int i=1; i<=10; i++) {
+			int answer = number * i;
+			System.out.println(answer);
+		}
+	}
+}
+
+```
+
+Printing the answer along with table number is:
+
+```java
+import java.util.*;
+public class Application {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("table number:");
+		int number = scanner.nextInt();
+		for(int i=1; i<=10; i++) {
+			int answer = number * i;
+			System.out.println(number + " *" + " " + i + " = " + " " + answer);
+		}
+	}
+}
+```
+
+### Easy Navigation in Eclipse
+You can use short keys to do speed up your coding in windows (also in mac).
+
+    ![accelerationkeys](https://github.com/sairamaj/programmingclass/blob/master/images/accelerationkeys.png)
+
+If you observe above you can see there is __underline__ for each characters in the menu. What is this means if you press __Alt key__ ( for example __Alt F__ will select the __File__ menu)
+
+    ![filenewjavaproject](https://github.com/sairamaj/programmingclass/blob/master/images/filenewjavaproject.png)
+
+By typing __Alt F__  and pressing Enter twice you will be in creating new Java project. 
+
+### Homework
+* Create session5 notes and check it in notes directory as session5.txt
+* Create a program which tells the school type based on user entered.
+   * Project name: SchoolTypeApp
+   * Class name: Application.java
+   * Should Ask the user about the grade
+   * Based on user entered
+     * less than 5th , should print __Elementary School__
+     * between 6th and 8 should print __Middle School__
+     * between 9th and 12th should print __High School__
+     * above 12th should print as __College__
+* Create program which will tell how man calories will burn on total runs
+    * Project name: RunTimeCalculator
+    * Class name: Applcation.java
+    * Ask the user
+        * Give number of laps run:
+        * for each run
+           * ask how much time taken
+        * Finally print total time taken for all laps.
+
+__Note__: Check the home work under HomeWork5 folder ( change Eclipse workspace to Homework5 directory for the projects to be created in Homework5 so that you can check in git using standard git commands)
+
+
+
+
+
+
+
+
