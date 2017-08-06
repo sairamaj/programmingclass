@@ -224,10 +224,10 @@ By typing __Alt F__  and pressing Enter twice you will be in creating new Java p
    * Class name: Application.java
    * Should Ask the user about the grade
    * Based on user entered
-     * less than 5th , should print __Elementary School__
-     * between 6th and 8 should print __Middle School__
-     * between 9th and 12th should print __High School__
-     * above 12th should print as __College__
+     * less than 5 , should print __Elementary School__
+     * between 6 and 8 should print __Middle School__
+     * between 9 and 12 should print __High School__
+     * above 12 should print as __College__
 * Create program which will tell how many minutes will take for total runs
     * Project name: RunTimeCalculator
     * Class name: Applcation.java
