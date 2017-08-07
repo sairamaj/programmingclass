@@ -237,7 +237,13 @@ By typing __Alt F__  and pressing Enter twice you will be in creating new Java p
            * ask how much time taken
         * Finally print total time taken for all laps.
 
-__Note__: Check the home work under HomeWork5 folder ( change Eclipse workspace to Homework5 directory for the projects to be created in Homework5 so that you can check in git using standard git commands)
+__Note__: Check the home work under HomeWork folder ( change Eclipse workspace to Homework directory for the projects to be created in Homework so that you can check in git using standard git commands)
+
+![eclipsehomeworkspace](https://github.com/sairamaj/programmingclass/blob/master/images/eclipsehomeworkspace.png)
+
+
+
+
 
 
 
