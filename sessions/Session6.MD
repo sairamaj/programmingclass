@@ -7,10 +7,10 @@ __datatype__ <space> __varaiblename__ = __valueofthevariable__ ;
 
 In above we have 2 variables. __age__ which is of type __int__ (remember __int__ can take only numbers) and another one __name__ which is of type __String__ (takes characters). __int__ , __String__ are the data types provided by Java. 
 
-Can you represent a person with a single variable using any one of the Java supplied data types (int, String, double)? No. When you want to represent a person usually you describe with a name, age, grade, height, weight. In this if you want to represent the person  you should have 5 variables (for name one variable, age another one etc.,). What we need is to have single variable __p__ to represent a person. This is where we will learn big concept in Java which is defining your own data types.
+Can you represent a person with a single variable using any one of the Java supplied data types (int, String, double)? No. When you want to represent a person usually you describe with a name, age, grade, height, weight. If you want to represent the person you should have 5 variables (for _name one variable, age another one etc.,). What we need is a single variable __p__ to represent a person. This is where we will learn big concept in Java which is defining your own data types.
 
 ## Your own data types
-One can define their own data types using basic data types (__int__ , __String__ ). This is like building a shape using small lego blocks.
+You can define your own data type using basic data types (__int__ , __String__ ). This is like building a shape using small lego blocks.
 
 ```java
     class Person{
@@ -21,7 +21,7 @@ Here you have defined your own data type called __Person__. Above __class__ is k
 
 The syntax is
 
-__class__ <yourdatatypename>{
+__class__ __yourdatatypename__{
 
 }
 
@@ -39,7 +39,7 @@ Then you can define what you want in this data type. Lets fill in with some data
 Now the data type __Person__ is complete.
 
 ### Using this your data type
-How can we use this data type in our program. Remember again how you are used to declare a variable which is __datatype__ followed by __variable__. Here also same.
+How can we use this data type in our program?. Remember again how you are used to declare a basic Java su pplied variable, which is __datatype__ followed by __variable__.(__int__ age;) Here also same.
 
 __Person__ person1;
 
@@ -49,9 +49,9 @@ We have slight difference in assigning values to this variable. In regular data 
 
 __Person__ person1 = new __Person__();
 
-<datatype> <variable> = __new__ <datatype>();
+<datatype> <variable> = __new__ __datatype__();
 
-__new__ is the keyword and you are saying to Java that I want to create new value ( the technical term __object__ which we will learn more about this in the next class) for this data type I have created. One you have done this then you can assign individual parts of Person (age,name,grade,height,weight) using __.__ (dot) like below
+__new__ is the keyword and you are saying to Java that I want to create new value ( the technical term __object__ which we will learn more about this in the next class) for this data type I have created. Once you have done this, then you can assign individual parts of Person (age,name,grade,height,weight) using __.__ (dot) like below
 
 ```java
     Person person1 = new Person();
@@ -62,9 +62,9 @@ __new__ is the keyword and you are saying to Java that I want to create new valu
     person1.weight = 100;
 ```
 
-In order to assign age we use our variable __person1__ and then __.__ (dot) and then one of the property you have defined in the class.
+In order to assign __age__ we use our variable __person1__ and then __.__ (dot) and then one of the property you have defined in the class.
 
-In order to use the variable for printing you use the same way like below
+In order to __use__ the variable for printing you use the same way like below
 ```java
     System.out.println( person1.name + " age is:" + person1.age);
 ```
@@ -78,7 +78,7 @@ In order to use the variable for printing you use the same way like below
 * Run the program and make sure that it prints.
 * At this time we are ready to add our own data type
 * File->New->Class and name __Person__
-* Make sure that public static void main() is __unchecked__ ( this is the difference between when you have created Application class where you have checked it. The reason is our Java project is going to have 2 classes but only one class needs to have __main__ method so that when you run the program starts from first instructions in __main__)
+* Make sure that public static void main() is __unchecked__ ( this is the difference between when you have created __Application__ class where you have __checked__ it and this class where you __uncheck__. The reason is our Java project is going to have 2 classes but only one class needs to have __main__ method so that when you run, the program starts from first instructions in __main__)
 * In newly created __Person__ class input the following
 ```java
     class Person{
@@ -157,7 +157,7 @@ Class starts with __{__ and ends with __}__. Within the class method like __main
 ### Not every line ends with ';'
 When we started the programming we said every line ends with ';'. Yes and No. Now that we have know more about Java we rephrase this that every __statement__ should end with ';'. What forms __statement__ and what not?
 
-__statement__ is roughly equivalent to sentences in natural english language. When you see __if__ it does not end and hence we don't put __;__ when if starts
+__statement__ is roughly equivalent to sentences in natural english language. When you see __if__ it does not end and hence we don't put __;__ 
 
 ```java
     if( x > 0); {       // Wrong to put ';' as this not statement where sentence is not done.
