@@ -108,5 +108,71 @@ In order to use the variable for printing you use the same way like below
     sai2 age is:15
 * In above we have 2 persons with different values.
 
+### Create program with some more data types
+* Repeat the above program but this time come up with your data types
+* Some of them you came up with are
+    * Movie
+    * Animal
+    * House
+    * Recipe
+
+__Note__ The data type which we wil be calling __class__ now-on-wards should be __Singular__ __Noun__. 
+
+## Some common mistakes in the class
+### Using the variables without declaring them.
+![variablenotdeclared](https://github.com/sairamaj/programmingclass/blob/master/images/variablenotdeclared.png)
+
+    you need to declare variable
+```java
+        int age = 10;       // You are declaring or you can call defining
+
+        System.out.println(age);        // Here you are using the variable
+
+```
+
+Eclipse gives the message like below
+![variablenotdeclaredwithmessage](https://github.com/sairamaj/programmingclass/blob/master/images/variablenotdeclaredwithmessage.png)
+
+### The curly ({ } ) brackets.
+In Java the curly brackets ( { and }) form a logical block and every opening of __{__ should have proper __}__. 
+Class starts with __{__ and ends with __}__. Within the class method like __main__ starts with __{__ and __}__. Within the method the __if__ stars with __{__ and ends with __}__. 
+
+```java
+    public class Application{
+
+        public static void main(String[] args){
+
+            if(  ){
+
+            }
+
+            // You can create your own block and put code in it.
+            {
+
+            }
+        }
+    }
+```
+
+### Not every line ends with ';'
+When we started the programming we said every line ends with ';'. Yes and No. Now that we have know more about Java we rephrase this that every __statement__ should end with ';'. What forms __statement__ and what not?
+
+__statement__ is roughly equivalent to sentences in natural english language. When you see __if__ it does not end and hence we don't put __;__ when if starts
+
+```java
+    if( x > 0); {       // Wrong to put ';' as this not statement where sentence is not done.
+
+    }
+```
+
+## Homework
+* Create session6 notes in __notes/session6.txt__ in git repository
+* Project with creating your own data type
+    * Project name MyHomeWorkDataSample
+    * Class Application.java with main
+    * New class and here it depends on what you choose for your own data type
+        * Hint: If you look around you can get lot of possibilities for data types like . Bike, Car, Picture, Kitchen, Room and soon 
+    * Check-in __homework__ folder in git repository
+
     
 
