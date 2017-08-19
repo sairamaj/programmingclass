@@ -107,7 +107,7 @@ In order to use the above data type and create a variable
     // datatype   variableName = new  datatype();
     Person p1 = new Person();
 ```
-syntax is __datatype__ ( in this case it is Person) followed by __variableName__ = __new__ keyword and then __datatype and followed by __()__
+syntax is __datatype__ ( in this case it is Person) followed by __variableName__ = __new__ keyword and then __datatype__ and followed by __()__
 
 
 # Class, Object, Instance
@@ -122,20 +122,20 @@ Last week we have learned creating our data types with keyword as __class__ and 
 ```
 We have discussed this is creating our data type and then creating variables for it.
 
-The technical term for creating our data type in Java is __class__ and creating variable for this data type is called __object__ or __instance__  ( __object__ is more used.)
+The technical term for creating our data type in Java is __class__ and creating __variable__ for this data type is called __object__ or __instance__  ( __object__ is more used.)
 
 ## Class
-If you observe when we define the __class__ we are describing that data type. For example in above __Person__ class we are not specifying a particular person ,but we are specifying what a person in common will have it. We can think of creating a __class__ as __template__  or __cookie cutter__ or __recipe__ or __blueprint__. Just like you create __cookies__ with a __cookie cutter__ , we create __objects__ with __class__
+If you observe above, when we define the __class__ we are describing that data type. For example in above __Person__ class, we are not specifying a particular person ,but we are specifying what a person in common will have it. We can think of creating a __class__ as __template__  or __cookie cutter__ or __recipe__ or __blueprint__. Just like you create __cookies__ with a __cookie cutter__ , we create __objects__ with __class__
 
     class  is template/cookie cutter/recipe/blueprint
     for example;
         When class is cookie cutter, then object is cookie
 
-Now-on-wards call __class__ ( you can still think as custom data type for your reference, but start using word __class__). Similarly use word __object__ for creating a variable of that class.
+Now-on-wards call __class__ ( you can still think as custom data type for your reference, but start using word __class__). Similarly use word __object__ for creating a __variable__ of that class.
 
-__Note__: __class__ is __Singular Nonu__ ( ex: Person but not Persons.)
+__Note__: __class__ is __Singular Noun__ ( ex: Person but not Persons.)
 
-How many objects you can create for given __class__?. Answer is as many as you can.
+How many objects you can create for given __class__?. Answer: as many as you can.
 
 # Actions/Methods/Functions/Behavior
 When we have described a person like below
@@ -147,7 +147,7 @@ When we have described a person like below
     }
 ```
 
-We have mentioned about a person will have name,age and grade. But what we are missing is some behavior associated with person. When we say a Person we also say what he/she can do also. For example a person can Play, Read Books, Jog for every day , does some programming etc., If you observe these they are all __actions__ a person can do. 
+We have mentioned about a person will have name,age and grade. But what we are missing is some behavior associated with person. When we say a Person, we also say what he/she can do also. For example a person can Play, Read Books, Jog for every day , does some programming etc., If you observe these they are all __actions__ a person can do. 
 
 ### action 
 In general (not related to programming) we have actions happen all the time in our real life.
@@ -204,6 +204,7 @@ Lets define these actions in Java programming.
         }
     }
 ```
+__Note__: __actions__ are __verbs__ (__class__ are __Noun__). Also actions start with lowercase (__read__) and class name start with Uppercase (__Person__)
 
 ### Syntax
 If you observe we have the syntax as
@@ -271,8 +272,9 @@ If you observe above after creating object we call method with __dot__(.) operat
 
     c.add(2,3)
 
-When a action returns (outputs) something then you can take this output with a variable like below
-    sum = c.add(2,3);
+When a action returns (outputs) something, then you can take this output with a variable like below
+   
+   sum = c.add(2,3);
 
 You need to declare __sum__ variable before this (the data type of this variable is nothing but what action is returning. In above case __add__ is returning of type __int__ and hence the __sum__ has to be __int__ )
 
@@ -300,6 +302,17 @@ In methods
 ```
 __add__ declares variable __z__ and this variable is __alive__ when it was declared and __dead__ after the end of __}__. The variable __z__ declared in __sub__ is totally different and hence we had declared again. The __z__ variable is no longer available after the return statement. This is called variable __scoping__ ( again remember for now the scope exists between code block __{ variable live and dead within this.}__)
 
+## Summary
+* Remember Syntax is important ( try understanding it and practice it.)
+* Custom data type technical term is __class__
+* variable for custom data type is nothing __object__ ( also __instance__)
+* __class__ is __Singular Noun ( ex: __Person__)
+    * class in Java starts with Uppercase
+* __action__ in class describe the behavior
+    * They are called __method__ ( also __function__)
+    * They start with lower case ( __run__, __readBook__)
+* __scoping__ meaning the variable declared in a code block is __alive__ and __dead__ between __{__ and __}__
+
 ## Homework
 * Create session7 notes in __notes/session7.txt__ in git repository
 * Project with creating methods.
@@ -313,15 +326,3 @@ __add__ declares variable __z__ and this variable is __alive__ when it was decla
         * System.out.println("stopping the car")
     * In Application class create Car object and call methods __start__ and __stop__
     * Check-in __homework__ folder in git repository
-
-
-
-
-
-   
-
-
-
-
-
-
