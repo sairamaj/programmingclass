@@ -3,7 +3,8 @@ Syntax is very important when you learning programming. If you are comfortable w
 
 __Tip:__ Don't remember it blindly. Remember logically ( and also try to think as natural english sentences) and it will be easy
 
-### If
+### if
+
 ```java
     if(...){
 
@@ -39,3 +40,63 @@ x>0 || y<10  ( __x__ should be greater than zero __or__  __y__ should be less th
    |   0    |  15    |      false  |
 
 __Tip:__ Read __if__ ( as __is__)
+
+### if, else if, else
+Follows the  same principle as if
+
+```java
+    if( ... ){
+
+    }else if(...){
+
+    }else if(...){
+
+    }else if(...){
+
+    }else{
+        // If none of the above matches things will be executed here.
+    }
+```
+
+### for
+Used for repetition
+
+```java
+    for( ;  ; ){
+
+    }
+```
+
+__for__ followed by __()__ , followed by code block __{}__ . __()__ contains 3 logical blocks separated by __;__.
+
+Entire __for__ syntax was explained step by step [here](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session4.MD#loopingrepetitions)
+
+### Custom data type ( class)
+
+Defining your data type.
+
+```java
+    class YourDataTypeNameHere{
+
+    }
+```
+
+Very simple here. __class__ followed by __yourdatatypename__ and then code block
+
+```java
+    class Person{
+
+    }
+```
+
+You can fill properties in the class just like any other variables you define.
+
+```java
+    class Person{
+        String name;
+        int age;
+        int grade;
+    }
+```
+
+
