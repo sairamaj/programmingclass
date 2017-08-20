@@ -305,7 +305,7 @@ __add__ declares variable __z__ and this variable is __alive__ when it was decla
 ## Summary
 * Remember Syntax is important ( try understanding it and practice it.)
 * Custom data type technical term is __class__
-* variable for custom data type is nothing __object__ ( also __instance__)
+* variable for custom data type is nothing but __object__ ( also __instance__)
 * __class__ is __Singular Noun__ ( ex: __Person__)
     * class in Java starts with Uppercase
 * __action__ in class describe the behavior
