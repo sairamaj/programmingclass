@@ -192,7 +192,7 @@ and the output will be
 Oops, we were able to start the car twice without stopping. In real scenario we can only __stop__ after starting the car. We should be able to fix this
 
 ### boolean
-We have learned Java given types __int__, __String__ and __double__. Lets visit a new kind of data type which is given by Java called  __boolean__. This data type is used when your data value can take only yes or no. Like did you go to school? you have either yes or not. Are you taking chemistry class this year? yes or no. 
+We have learned Java given types __int__, __String__ and __double__. Lets visit a new kind of data type which is given by Java called  __boolean__. This data type is used when your data value can take only __yes__ or __no__. Like did you go to school? you have either yes or no. Are you taking chemistry class this year? yes or no. 
 
 We are going to use this data type here. I will be giving pseudo code here and you should be finish this as home work.
 
@@ -203,7 +203,8 @@ Before giving pseudo code lets walk through non programming scenario. Imagine yo
     Me:  Start
     You: Sorry , you have started already. You need to stop before starting again.
 
-How did you say sorry when I asked you second time. Because you have __remembered__ that I already called start and when I asked to start second time you have asked yourself did he call start already and you got answer yes ( by thinking in your brain) and hence you said sorry.
+How did you say sorry when I asked you the second time?. It is because you have __remembered__ that I already called start. When I asked you to start the second time, you have asked yourself "
+did he already call start" and you got the answer yes (by thinking in your brain) and hence you said __sorry__.
 
 If you have followed this conversation , see the __remembered__ and __yes__ and __no__ in giving answer in __start__.
 
@@ -211,7 +212,7 @@ If you have followed this conversation , see the __remembered__ and __yes__ and 
         is started
             "sorry you have started already. you need to stop before starting again
         else
-            "start"
+            "start" 
             started = true
     
     stop method
@@ -230,7 +231,6 @@ If you remember __is__ in real conversation will become __if__ in programming wo
 * __boolean__ variables are used to store values __yes__ or __no__ types.
 
 # Homework
-* Create session7 notes in __notes/session7.txt__ in git repository
+* Create session8 notes in __notes/session8.txt__ in git repository
 * You have created CarSample already ( if not you can create now and use the code mentioned above)
-  * Fix the start method so that if you start second time you should say "sorry" ( just like explained above conversation)
-  
+  * Fix the start method so that, if you start second time you should say "sorry" ( just like explained in above conversation)
