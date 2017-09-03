@@ -12,6 +12,12 @@
 
     }
 ```
+### Object (Instance)
+* Creating a variable of class is nothing but object ( creating a cookie from cookie cutter)
+* Syntax
+```java
+    Person p1 = new Person();       // You use new keyword.
+```
 ### Fields
 * Properties in class
 * They are variables in class. Once you define a variable it will become field.
@@ -21,12 +27,7 @@
         String name;        // field name of data type String.
     }
 ``` 
-### Object (Instance)
-* Creating a variable of class is nothing but object.
-* Syntax
-```java
-    Person p1 = new Person();       // You use new keyword.
-```
+
 ### Methods
 * Actions 
 * Verbs
@@ -102,4 +103,156 @@ public class Car {
   
 ```
 
+# Encapsulation
+Today we are going to learn one of the Object Oriented Principal (OOPs in short). Java language is based on Object Oriented Principles where everything is object ( you know now what mean by object which is nothing but creating a variable with __new__ keyword for given class.)
 
+If you observe all the class we have defined so far have some patterns. We have fields and methods which are defined in classes are related. For example
+
+```java
+    class Person{
+        String name;
+        int age;
+
+        void readBook(Sring bookName){
+                System.out.println(name + " is reading book:" + bookName)
+        }
+    }
+
+    class Car{
+        String name;
+        int horsePower;
+
+        void start(){
+
+        }
+
+        void stop(){
+
+        }
+    }
+
+    class Animal{
+        String name;
+
+        boolean canFly(){
+
+        }
+    }
+```
+
+We did not put __readBooks__ in Animal and Car. At the same time we did not put __start__ in Person or Animal. This is the one part of first principal which is called __Encapsulation__ which says packaging (putting) related data (fields) and behavior(methods) together in class.
+
+## 2nd part of Encapsulation
+A real car when you start lot of things happens which moves the car just you by putting pressure on accelerator. Imagine you have car where you need to put some gas in chamber, light the gas and turn some handlers which ultimately moves the wheels just move for a feet. How that experience will be? tough right? But somebody has to do it which Car manufacturer did all those things for you. 
+
+Lets write a Car class which exists where you need to do lot of things to move the car.
+```java
+
+public class Car {
+	String name;
+	int horsePower;
+	boolean isStarted = false;	// used to indicate whether is is started or not.
+
+	void putGasInChamber() {
+		System.out.println("putting gas in chamber");
+	}
+	
+	void igniteChamber() {
+		System.out.println("Igniting chamber");
+	}
+	
+	void moveWheels() {
+		System.out.println("moving wheels");
+	}
+}
+
+	public static void main(String[] args) {
+		Car c1 = new Car();
+		c1.name = "bmw";
+		c1.horsePower = 200;
+
+        // You need to do all these things just moving the car.
+		c1.putGasInChamber();
+		c1.igniteChamber();
+		c1.moveWheels();
+	}
+
+```
+Did you see from __Application__ class you are calling individual calls to __Car__ class to move the wheels. But in reality you will do the following
+
+```java
+public class Car {
+	String name;
+	int horsePower;
+	boolean isStarted = false;	// used to indicate whether is is started or not.
+
+	void start() {
+		putGasInChamber();
+		igniteChamber();
+		moveWheels();
+		System.out.println("now car is moving");
+	}
+
+	void stop() {
+	}
+	
+	void putGasInChamber() {
+		System.out.println("putting gas in chamber");
+	}
+	
+	void igniteChamber() {
+		System.out.println("Igniting chamber");
+	}
+	
+	void moveWheels() {
+		System.out.println("moving wheels");
+	}
+}
+
+public static void main(String[] args) {
+    Car c1 = new Car();
+    c1.name = "bmw";
+    c1.horsePower = 200;
+    c1.start();
+}
+
+```
+
+Where you simply call __start__ and Car is moving now which is what exactly happens in real life. In real life you can't control the gas chamber any more. This is what should be done in programming also where one should not be able to call __pumGasInChamber__ , __igniteChamber__  and __moveWheels__. This can be done by using __private__ key word.
+
+```java
+
+public class Car {
+	String name;
+	int horsePower;
+	boolean isStarted = false;	// used to indicate whether is is started or not.
+
+	void start() {
+		putGasInChamber();
+		igniteChamber();
+		moveWheels();
+		System.out.println("now car is moving");
+	}
+	
+	void stop() {
+	}
+	
+	// Nobody can call this method outside Car class
+	private void putGasInChamber() {
+		System.out.println("putting gas in chamber");
+	}
+	
+	// Nobody can call this method outside Car class
+	private void igniteChamber() {
+		System.out.println("Igniting chamber");
+	}
+	
+	// Nobody can call this method outside Car class
+	private void moveWheels() {
+		System.out.println("moving wheels");
+	}
+}
+
+```
+
+You observe above __private__ key word is used so that outside one cannot call c1.patGasInChamber();
