@@ -123,9 +123,9 @@ output
     starting
     stopping
 
-If you see above output you see "starting" and "stopping" with 2 times one for each car. But the problem in this is, we don't which car started first and which car stopped first by looking at the output ( not looking at the program).
+If you see above output you see "starting" and "stopping" with 2 times one for each car. But the problem in this is, we don't know which car started first and which car stopped first by looking at the output ( not looking at the program).
 
-We can enhance this program to output which car is starting and which car is stopping. This is where the __fields__ in the class and __methods__ in the class are connected. The __methods__ in a class have access to the __fields__ as they are defined together in the class. You can think of these as family, where family members things can be accessed(shared) by other members. Also when you create __c1__ object ( at this time you should know __object__ is nothing but creating a __variable__ for the __class__) , you can think of creating a following memory in RAM ( Remember, we have learned in previous classes where RAM is scratch pad where computer program uses to do its work [here](https://github.com/sairamaj/programmingclass/blob/master/sessions/First.MD#computer-fundamentals)).
+We can enhance this program to output which car is starting and which car is stopping. This is where the __fields__ in the class and __methods__ in the class are connected. The __methods__ in a class have access to the __fields__ as they are defined together in the class. You can think of these as family, where family member things can be accessed(shared) by other members. Also when you create __c1__ object ( at this time you should know __object__ is nothing but creating a __variable__ for the __class__) , you can think of creating a following memory in RAM ( Remember, we have learned in previous classes where RAM is scratch pad where computer program uses to do its work [here](https://github.com/sairamaj/programmingclass/blob/master/sessions/First.MD#computer-fundamentals)).
 
 ![carmemoryimage](https://github.com/sairamaj/programmingclass/blob/master/images/carmemoryimage.png)
 
