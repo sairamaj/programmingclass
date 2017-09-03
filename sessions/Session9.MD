@@ -256,3 +256,12 @@ public class Car {
 ```
 
 You observe above __private__ key word is used so that outside one cannot call c1.patGasInChamber();
+
+![privatenotvisible](https://github.com/sairamaj/programmingclass/blob/master/images/privatenotvisible.png)
+
+If you see above when you are trying to call __private__ method you get __not visible__ error. This is what second part of __Encapsulation__ principle which is saying __hiding the details__. In __Car__ class we are hiding __putGasInChamer__, __ignoreChamber__ and __moveWheels__ with Java keyword __private__.
+
+### Encapsualation
+* Packaging the related properties and actions ( __fields__ and __methods__ are related)
+* Hiding the details ( with __private__ keyword)
+
