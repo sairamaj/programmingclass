@@ -104,7 +104,7 @@ public class Car {
 ```
 
 # Encapsulation
-Today we are going to learn one of the Object Oriented Principal (OOPs in short). Java language is based on Object Oriented Principles where everything is object ( you know now what mean by object which is nothing but creating a variable with __new__ keyword for given class.)
+Today we are going to learn one of the Object Oriented Programming (OOPs in short). Java language is based on Object Oriented Programming where everything is object ( you know now what mean by object which is nothing but creating a variable with __new__ keyword for given class.)
 
 If you observe all the class we have defined so far have some patterns. We have fields and methods which are defined in classes are related. For example
 
@@ -264,4 +264,16 @@ If you see above when you are trying to call __private__ method you get __not vi
 ### Encapsualation
 * Packaging the related properties and actions ( __fields__ and __methods__ are related)
 * Hiding the details ( with __private__ keyword)
+
+# Recap
+* OOP mean Object Oriented Programming where everything works with __object__
+* The principles are important to do good design and programming
+* Java is based on Object OOP principles
+* Encapsulation
+    * Packaging related __fields__ and __methods__ in __class__
+    * Hiding the details
+        * Some of the details in the class need not be visible outside and we use __private__ key word for this
+
+# Homework
+* Create session9 notes in __notes/session9.txt__ in git repository
 
