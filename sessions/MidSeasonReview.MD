@@ -32,3 +32,246 @@ Basic computer does now know English. All computers know is 1 or 0. Can you beli
 
 For full details about these visit [here](https://github.com/sairamaj/programmingclass/blob/master/sessions/First.MD)
 
+# IDE (Interactive Development Environment)
+Now that you know Java is one language you use to communicate to Computer ,how do you use this language and ask Computer to do some stuff. In real life you talk to somebody to give instructions and in Computer you need to type and put it in a file and give this file to Computer. You have different programs ( or Applications as one can refer program and applications similar which are nothing but somebody has written to do some special things in computer) in computer to do different things.When you want to do some internet you open browser like google chrome. When you want to edit document you use windows word. Similarly when you want to play you use video player. To type your Java language there are special programs which are called Interactive Development Environment (in short IDE) and __Eclipse__ is one such program. These programs give you to type Java programs, tells you any mistakes you make, allow to run your program to show the results etc., In __Eclipse__ you can create Java project, classes and many more. You can see what we have covered regarding eclipse [here](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD#eclipse)
+
+# Where do you start?
+You know now that __Java__ is required to communicate and __Eclipse__ is used to type language to tell __Computer__ to do some stuff, where do you start? Just like we have some grammar in our real life communication we need to use Java (Computer language) in specific way. There is some structure to it which is called __Syntax__.  Whatever we want to tell to computer through Java we need to put in to instructions and give some name to it which are called __methods__ and group these methods in to __classes__ and __invoke__ them which is also called __calling__ them. 
+
+Lets say you want Computer to do some math like addition and subtractions given two numbers. 
+
+You start by writing a __class__ and name it and put __actions__ (__methods__) in it.
+```java
+    class Math{
+        int add(int x, int y){
+            int z;
+
+            z = x+y;
+            return z;
+        }
+    }
+
+    class Application{
+        public static void main(String[] args){
+            Math m = new Math();
+            int sum = 0;
+
+            // This is invoking action add (also use the term calling add method)
+            sum = m.add(2,4);
+            
+            System.out.println("sum is:" + sum)
+        }
+    }
+```
+
+Before this you need to create a Project ( think project as collections of __classes__ ) in Eclipse and name it
+* Project: 
+  * MathSample
+     * Class
+       * Math
+       * Application
+
+## Running (Executing) the program
+The term used to follow the instructions written by Java to Computer is usually referred by __run__ or __execute__ the program. If you see in Eclipse there will be __Run__ button when you click ,the computer follows your Java written program and does whatever you asked to do. Some of these are explained [here](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD#eclipse)
+
+# Syntax
+There are two aspects in programming. One is Syntax (equivalent of grammar in English language). You have grammar like period, comma, paragraphs, verbs , nouns etc., in English language , the following are some of the syntax we have learned so far in Java
+
+### Semicolon (;)
+* Every statement (a __statement__ is equivalent of __sentence__ in English language ) ends with __;__
+```java
+    int x = 0;
+    String name = "sai";
+
+    System.out.println("hello world");
+
+    if(){       // No semi colon as if was not ending there is some continuation to it.
+
+    }
+```
+
+### Data type
+* Java language needs to know what is the values are going to put in to a variable
+* Only numbers then you would say __int__
+* __Strings__ which will take any alpha numeric values.
+* [more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session4.MD#data-types)
+
+### Variable
+* A __variable__ by definition changes values.
+* __x__ is variable which can take either 1, 2, 3 etc.,
+* [more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session4.MD#data-types)
+
+### Constants
+* A __constant__ by definition does not change
+* 1,2, 3 ,"hello" are all constants.
+
+### Declaring a variable
+* <datatype> <name> = <value>
+```java
+    int x = 0;
+    String name = "hai";
+```
+
+### If ,else if, else
+* If, else if , else are used for controlling the which instructions should a computer follow based on inputs which are called __control flow statements__
+```java
+    if(){
+
+    }else if(){
+
+    }else if(){
+
+    }else{
+
+    }
+```
+* [more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session4.MD#if-statement)
+
+### for
+* for is used for repetitions
+```java
+    for( ; ; ){
+
+    }
+```
+[more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session4.MD#for-loop)
+
+### class
+* class is used to define the template (cookie cutter)
+```java
+    class Person{
+
+    }
+
+    class Animal{
+
+    }
+```
+[more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session7.MD#class-object-instance)
+
+### object
+* object is creating a variable for the class with keyword new
+```java
+    Person p1 = new Person();
+    Animal cat = new Animal();
+```
+[more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session7.MD#class-object-instance)
+
+### fields
+* fields are properties defined in class
+```java
+    class Aninal{
+        String name;
+        int age;
+    }
+```
+### methods
+* methods are actions defined in class
+```java
+    class Car{
+        void start(){
+            System.out.println("starting a car");
+        }
+
+        void stop(){
+            System.out.println("stopping a car");
+        }
+    }
+```
+[more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session7.MD#actionsmethodsfunctionsbehavior)
+
+### Connection between methods and fields
+* methods in class can access fields
+```java
+    class Car{
+        String name;
+
+        void start(){
+            System.out.println("starting:" + name);
+        }
+    }
+```
+[more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session8.MD#connecting-class-methods-and-class-fields)
+
+### main method
+* This is where the computer starting following instructions in your program
+* You can have multiple classes in your project but there should be only one class which contain main method
+```java
+    class Application{
+        public static void main(String[] args){
+            System.out.println("This is where computer start following your instructions");
+        }
+    }
+```
+
+### code block
+* Any code which enclosed between __{__ and __}__
+* Group of multiple statements
+```java
+    if( x> 0){  // begining
+        System.out.println()
+    }   // ends here
+
+    void start(){   // begining of method start
+
+        pumpGas();
+        ignireChamber();
+        System.out.println("started");
+        
+    }   // end
+```
+# Encapsulation
+* First principle of Object Oriented Programming
+* Two parts
+   * packaging the related fields and methods in class
+   * hiding the details
+[more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session9.MD#encapsulation)
+
+# Strategy of approaching of writing a new program
+* Following some basic steps when writing your new programs will help and [here] (https://github.com/sairamaj/programmingclass/blob/master/sessions/Session5.MD#steps-involved-in-writing-program)
+
+
+# Git
+* Git is where you can store your programs on line.
+* Your homeworks and notes are stored here.
+* The following are minimum commands you need to know in order out get files in to git on line account
+  * git add *
+  * git status
+  * git commit -m "your comment"
+  * git push
+
+[more info](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session3.MD#what-is-git)
+
+# Miscellaneous info
+[Converting Decimal to Binary and Binary to Decimal](https://github.com/sairamaj/programmingclass/blob/master/sessions/First.MD)
+[Windows Operating System](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD)
+[Creating your first Hello world project](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD#hello-world-java)
+[Switching workspaces in Eclipse](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session3.MD#eclipse)
+[Naming of variables, commenting, Indentation, Fixing Syntax errors, Matching curly brackets](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session4.MD#some-general-info-regarding-java-programming)
+[Taking user input](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session5.MD#taking-input-from-user)
+[Using Keyboard shortcuts](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session5.MD#easy-navigation-in-eclipse)
+[Some common mistakes you do](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session6.MD#some-common-mistakes-in-the-class)
+[Actions with different inputs and outputs](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session7.MD#action)
+
+# All previous sessions
+[Session 1 - Computer fundamentals](https://github.com/sairamaj/programmingclass/blob/master/sessions/First.MD)
+[Session 2 - Operating System & HelloWorld Java](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD)
+[Session 3 - Working with git basics](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session3.MD)
+[Session 4 - Data Types , If, For and Some general guidelines](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session4.MD)
+[Session 5 - Strategy to approach for writing a program](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session5.MD)
+[Session 6 - Defining your own data types - classes](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session6.MD)
+[Session 7 - Defining methods](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session7.MD)
+[Session 8 - Connecting methods and fields in class](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session8.MD)
+[Session 9 - Encapsulation](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session9.MD)
+
+
+
+
+
+
+
+
+
+
+
+
