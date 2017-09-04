@@ -256,7 +256,7 @@ There are two aspects in programming. One is Syntax (equivalent of grammar in En
 # Miscellaneous info
 [Converting Decimal to Binary and Binary to Decimal](https://github.com/sairamaj/programmingclass/blob/master/sessions/First.MD)
 
-[Windows Operating System](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD)
+[Windows Operating System](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD#windows-os)
 
 [Creating your first Hello world project](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD#hello-world-java)
 
@@ -265,6 +265,8 @@ There are two aspects in programming. One is Syntax (equivalent of grammar in En
 [Naming of variables, commenting, Indentation, Fixing Syntax errors, Matching curly brackets](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session4.MD#some-general-info-regarding-java-programming)
 
 [Taking user input](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session5.MD#taking-input-from-user)
+
+Use Ctrl+Shift+F (on Windows and on mac Ctrl->Command) to do auto indent which indent properly.
 
 [Using Keyboard shortcuts](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session5.MD#easy-navigation-in-eclipse)
 
