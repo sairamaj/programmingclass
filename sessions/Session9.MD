@@ -106,7 +106,7 @@ public class Car {
 # Encapsulation
 Today we are going to learn one of the Object Oriented Programming (OOPs in short). Java language is based on Object Oriented Programming where everything is object ( you know now what mean by object which is nothing but creating a variable with __new__ keyword for given class.)
 
-If you observe all the class we have defined so far have some patterns. We have fields and methods which are defined in classes are related. For example
+If you observe all the classes we have defined so far have some patterns. We have fields and methods which are defined in classes are related. For example
 
 ```java
     class Person{
