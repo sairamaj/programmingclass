@@ -196,4 +196,90 @@ We are going to write __Person__ and going to have a method which gives whether 
     }
 ```
 
-rest is coming....
+### Calling method and using return values and providing inputs
+If you have method like below
+```java
+    class Student{
+        String name;
+
+        public void doHomeWork(){
+            System.out.println(name + " doing homework");
+        }
+    }
+```
+
+When you run the above program the statement "doing homework" does not appear. why? When you are defining a method you are writing instructions and grouping them with a method. They are not being used. Remember __class__ is a template(cookie cutter) and just like that __method__ is template and unless we use that computer wont run these instructions. Lets how we do that
+
+#### Calling ( using the method)
+```java
+    public class Application{
+        public static void main(String[] args){
+            Student s1 = new Student();
+            s1.name = "bob";
+            // Asking bob to do homework
+            s1.doHomeWork();
+
+            Student s2 = new Student();
+            s2.name = "joe";
+            // Asking joe to do homework
+            s2.doHomeWork();
+        }
+    }
+```
+
+When you execute the above program the you will see the below output
+
+<p>
+    bob doing homework
+    joe doing homework
+</p>
+
+you call the method on the object like above. If you observe there is a difference between accessing class variables and methods. For methods you use __()__ and provide any input.
+
+```java
+    s1.name = "bob";        // just like any other variable assignment.
+    s1.doHomeWork();        // use () to provide input. Here we don't have any inputs.
+```
+#### Providing inputs 
+Some methods take input and when you are calling (now you know the difference between __defining__ and __calling__).
+
+```java
+    class Student{
+
+        void readBook(String bookName){
+            System.out.println("reading book :" + bookName);
+        }
+    }
+```
+If you want to call(use) this method and pass input parameters
+```java
+    Student s1 = new Student();
+    s1.readBook("Harry Potter");
+```
+If use __()__ and pass input parameters. As the __readBook__ is taking one parameter and its data type is __String__ , you can pass any value which corresponds to string.
+
+The same goes with multiple inputs
+```java
+    class Student{
+        String name;
+
+        // Method which is asking to read a given book for specified number of minutes.
+        void readBook(String bookName, int minutesToRead){
+            System.out.println("reading book :" + bookName + "  for:" + minutesToRead);
+        }
+        
+    }
+```
+and to call
+```java
+    Student s1 = new Student();
+    s1.name = "bob";
+    s1.readBook("Harry Potter",60);     // asking student "bob" to study "Harry Potter" for 60 minutes.
+```
+where you specify each parameter with __,__ and parameters order matters as readBook is taking book name and minutes to read which are of data type __String__ and __int__ respectively ,you need to use __String__ data type value and __int__ data type value.
+
+#### Using Return values specified by method
+
+### Constructor revisited
+### this special keyword
+### Some Eclipse useful tips
