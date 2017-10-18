@@ -195,6 +195,23 @@ We are going to write __Person__ and going to have a method which gives whether 
         }
     }
 ```
+To complete the __canDrive__ method with Oregon law, you need to write the logic(steps) in the function
+```java
+    class Person{
+        String name;
+        int age;
+
+        // always create 2 blank lines between variables and the rest of the methods.
+        // In Java method name starts with lower case letter.
+        boolean canDrive(){
+            if(age >=15){
+                return true;        // can drive.
+            }else{
+                return false;       // cannot drive.
+            }
+        }
+    }
+```
 
 ### Calling method and using return values and providing inputs
 If you have method like below
@@ -279,7 +296,86 @@ and to call
 where you specify each parameter with __,__ and parameters order matters as readBook is taking book name and minutes to read which are of data type __String__ and __int__ respectively ,you need to use __String__ data type value and __int__ data type value.
 
 #### Using Return values specified by method
+As the method give back something (like readBook is giving how many minutes were read) and in calling place we can get back like below
+
+```java
+    int numberOfMinutesRead = s1.readBook("Harry Potter",60);
+    System.out.println("Number of minutes read:" + numberOfMinutesRead);
+```
+As readBook is returning the __int__ data type, one needs to define a __int__ variable which we have done above (numberOfMinutesRead is int variable)
 
 ### Constructor revisited
+We have seen constructor earlier. Lets revisit one more time as we have learned about methods.
+
+A constructor is 
+* method ( it has inputs just like any other method)
+* special method 
+    * Its name is same as class type
+    * It does not have return data type ( you cannot say __void__ also);
+```java
+    class Student{
+        String name;
+        int age;
+
+        // method name: Student ( same as class name)
+        // no return type specified ( not even void)
+        Student(String inputName, int inputAge){
+            name = inputName;
+            age = inputAge;
+        }
+    }
+```
+You can create objects
+```java
+    Student s1 = new Student("bob",13);
+    Student s2 = new Student("joe",30);
+```
+If you see when creating a object then you will realize why this special method is called __Constructor__. When creating object  you are passing parameter and during this period it uses this special method (see its inputs matching with method) and hence called Constructor.
+
 ### this special keyword
+In above samples we have defined the constructor like below
+```java
+    class Student{
+        Student(String inputName, int inputAge){
+            name = inputName;
+            age = inputAge;
+        }
+    }
+```
+where inputName is the input for the name and inputAge for the age. Instead of using input for the variables prefix we want to use regular variable names like __name__ and __age__ like below
+```java
+    class Student{
+        String name;
+        int age;
+
+        Student(String name, int age){
+            name = name;
+            age = age;
+        }
+    }
+```
+But when we say
+```java
+    name = name;
+    age = age;
+```
+then we got some confusion. which name is class variable and which name is input to the method. Here is where the keyword __this__ is useful. Lets see the below constructor again.
+
+```java
+    class Student{
+
+        String name;
+        int age;
+
+        Student(String name, int age){
+            this.name = name;
+            this.age = age;
+        }
+    }
+```
+When you say __this.name__ then it is referring to class variable and the one without __this__ is input to the method.
+
+![showingthis](https://github.com/sairamaj/programmingclass/blob/master/images/showingthis.png)
+
 ### Some Eclipse useful tips
+When you are trying to access variables or methods of an object , as soon as you type intellisense will show you the methods and variables and you can highlight the one you want and press enter key word which will fill the method automatically. You don't have to type the entire method name yourself.
