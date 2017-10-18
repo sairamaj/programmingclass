@@ -33,7 +33,7 @@ We will write some methods in class like below
     }
 ```
 ## Method Syntax
-Lets discuss about the methods and signature of it.
+Lets discuss about the methods and syntax( also called signature) of it.
 
 ### Steps for writing method signature
 * First you have to ask for method name
@@ -99,6 +99,8 @@ Now we are ready to write the method signature
         return 10;      // The value returned (10 here) should match with data type(int here) mentioned.
     }
 ```
+
+![methodreturn](https://github.com/sairamaj/programmingclass/blob/master/images/methodreturn.png)
 
 7. Now complete the logic if any in the method
 
@@ -244,14 +246,14 @@ When you run the above program the statement "doing homework" does not appear. w
     }
 ```
 
-When you execute the above program the you will see the below output
+When you execute the above program then you will see the below output
 
-<p>
+```java
     bob doing homework
     joe doing homework
-</p>
+```
 
-you call the method on the object like above. If you observe there is a difference between accessing class variables and methods. For methods you use __()__ and provide any input.
+If you observe there is a difference between accessing class variables and methods. For methods you use __()__ and provide any input.
 
 ```java
     s1.name = "bob";        // just like any other variable assignment.
@@ -273,7 +275,7 @@ If you want to call(use) this method and pass input parameters
     Student s1 = new Student();
     s1.readBook("Harry Potter");
 ```
-If use __()__ and pass input parameters. As the __readBook__ is taking one parameter and its data type is __String__ , you can pass any value which corresponds to string.
+Use __()__ and pass input parameters. As the __readBook__ is taking one parameter and its data type is __String__ , you can pass any value which corresponds to string.
 
 The same goes with multiple inputs
 ```java
@@ -293,7 +295,7 @@ and to call
     s1.name = "bob";
     s1.readBook("Harry Potter",60);     // asking student "bob" to study "Harry Potter" for 60 minutes.
 ```
-where you specify each parameter with __,__ and parameters order matters as readBook is taking book name and minutes to read which are of data type __String__ and __int__ respectively ,you need to use __String__ data type value and __int__ data type value.
+where you specify each parameter with __,__ and parameters order matters, as readBook is taking book name and minutes to read which are of data type __String__ and __int__ respectively ,you need to use __String__ data type value and __int__ data type value.
 
 #### Using Return values specified by method
 As the method give back something (like readBook is giving how many minutes were read) and in calling place we can get back like below
@@ -330,7 +332,7 @@ You can create objects
     Student s1 = new Student("bob",13);
     Student s2 = new Student("joe",30);
 ```
-If you see when creating a object then you will realize why this special method is called __Constructor__. When creating object  you are passing parameter and during this period it uses this special method (see its inputs matching with method) and hence called Constructor.
+When creating a object , you will realize why this special method is called __Constructor__. When creating object  you are passing parameter and during this period it uses this special method (see its inputs matching with method) and hence called Constructor.
 
 ### this special keyword
 In above samples we have defined the constructor like below
@@ -379,3 +381,20 @@ When you say __this.name__ then it is referring to class variable and the one wi
 
 ### Some Eclipse useful tips
 When you are trying to access variables or methods of an object , as soon as you type intellisense will show you the methods and variables and you can highlight the one you want and press enter key word which will fill the method automatically. You don't have to type the entire method name yourself.
+
+### Homework
+* Create session13 notes and check it in notes directory as session13.txt
+* Create a project and in that
+    * Create a class called Player
+    * Create a method 
+        * play ( no inputs and no outputs)
+        * getScore( gives back the points he/she scored)
+            * return 100 for now.
+    * In Application class
+        * Create a player
+        * call methods play ad getScore
+        * print the score
+
+
+
+
