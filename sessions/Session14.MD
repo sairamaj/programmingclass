@@ -137,3 +137,107 @@ See below picture which matches the calling a method and its actual method being
 
 ![overloadmatching](https://github.com/sairamaj/programmingclass/blob/master/images/overloadmatching.png)
 
+__Method Overloading__ is a feature that allows a class to have __more than one method having the same name__, if their argument lists are different.
+
+For overload to work the method parameters should be different. See below
+```java
+    class Student{
+        void readBook(String bookName, int minutesToRead){
+
+        }
+        
+        void readBook(String bookName, int pagesToRead){
+
+        }
+    }
+```
+If you see above methods,it wont work. You think arguments are different as first one is taking minutesToRead as second parameter and second one is taking pagesToRead. But it is not the variable names it is their data types which are (String, int) and second method also (String,int) and which are same and hence this will be compile error.
+
+Below will work
+```java
+    class Student{
+        void readBook(String bookName, int minutesToRead){
+
+        }
+        
+        void readBook(int pagesToRead, String bookName){
+
+        }
+    }
+```
+as they are (String,int) which is different from (int,String)
+
+# Char data type
+We have learned so far below data types
+* String (Used for values with characters, numbers )
+* int( used for numbers only)
+* double ( used for numbers with decimals)
+* boolean ( used for either true or false)
+
+```java
+    String s1 = "Hello";
+    int x = 10;
+    double d = 10.5;
+    boolean result = true;
+```
+Data type __char__ is used for storing a single character.
+```java
+    char grade = 'A';
+    char genderType = 'M';
+```
+
+# Instructions in Method body
+What I see is some of them getting confused where a instruction to computer ( like System.out.println("")) will go. 
+
+__Java__ Project contains Multiple __classes__
+A __class__ contains
+    - variables
+    - constructor
+    - methods
+A __method__ contains 
+    - instructions
+
+Method body ( __body__ is the part which begins with __{__ and ends with __}__) is where all instructions should go. That means
+```java
+    class Student{
+
+        void readBook(String bookName){
+
+            // Instructions go here (between { and } )
+
+        }
+
+        // No instructions (outside {})
+    }
+```
+
+### Homework
+* Create session14 notes and check it in notes directory as session14.txt
+* Create a project and in that
+    * Create a class called Player
+    * Create a method 
+        * play ( no inputs and no outputs)
+        * getScore( gives back the points he/she scored)
+            * return 100 for now.
+        * create same method getScore(int gameNumber)
+    * In Application class
+        * Create a player
+        * call methods play and getScore
+        * print the score
+        * call method getScore(10) and print the score.
+
+
+
+# Tip in Eclipse
+## Auto Completion
+    When you want to type either method name or variable name you can start typing some characters and then press enter to finish.
+![eclipsetipformethod](https://github.com/sairamaj/programmingclass/blob/master/images/eclipsetipformethod.png)
+
+For variables you can press Ctrl and Space then you will see variables.
+![eclipsetipforvariable](https://github.com/sairamaj/programmingclass/blob/master/images/eclipsetipforvariable.png)
+
+
+
+
+
+

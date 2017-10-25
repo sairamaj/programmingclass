@@ -392,7 +392,7 @@ When you are trying to access variables or methods of an object , as soon as you
             * return 100 for now.
     * In Application class
         * Create a player
-        * call methods play ad getScore
+        * call methods play and getScore
         * print the score
 
 
