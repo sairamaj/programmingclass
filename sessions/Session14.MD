@@ -189,13 +189,14 @@ Data type __char__ is used for storing a single character.
 # Instructions in Method body
 What I see is some of them getting confused where a instruction to computer ( like System.out.println("")) will go. 
 
-__Java__ Project contains Multiple __classes__
-A __class__ contains
-    - variables
-    - constructor
-    - methods
-A __method__ contains 
-    - instructions
+__Java__ Project contains 
+*   Multiple __classes__
+    * A __class__ contains
+        *  variables
+        *  constructor
+        *  methods
+        A __method__ contains 
+           * instructions
 
 Method body ( __body__ is the part which begins with __{__ and ends with __}__) is where all instructions should go. That means
 ```java
@@ -211,7 +212,18 @@ Method body ( __body__ is the part which begins with __{__ and ends with __}__) 
     }
 ```
 
-### Homework
+
+
+# Tip in Eclipse
+## Auto Completion
+    When you want to type either method name or variable name you can start typing some characters and then press enter to finish.
+![eclipsetipformethod](https://github.com/sairamaj/programmingclass/blob/master/images/eclipsetipformethod.png)
+
+For variables you can press Ctrl and Space then you will see variables.
+![eclipsetipforvariable](https://github.com/sairamaj/programmingclass/blob/master/images/eclipsetipforvariable.png)
+
+
+# Homework
 * Create session14 notes and check it in notes directory as session14.txt
 * Create a project and in that
     * Create a class called Player
@@ -225,17 +237,6 @@ Method body ( __body__ is the part which begins with __{__ and ends with __}__) 
         * call methods play and getScore
         * print the score
         * call method getScore(10) and print the score.
-
-
-
-# Tip in Eclipse
-## Auto Completion
-    When you want to type either method name or variable name you can start typing some characters and then press enter to finish.
-![eclipsetipformethod](https://github.com/sairamaj/programmingclass/blob/master/images/eclipsetipformethod.png)
-
-For variables you can press Ctrl and Space then you will see variables.
-![eclipsetipforvariable](https://github.com/sairamaj/programmingclass/blob/master/images/eclipsetipforvariable.png)
-
 
 
 
