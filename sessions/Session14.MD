@@ -216,7 +216,8 @@ Method body ( __body__ is the part which begins with __{__ and ends with __}__) 
 
 # Tip in Eclipse
 ## Auto Completion
-    When you want to type either method name or variable name you can start typing some characters and then press enter to finish.
+When you want to type either method name or variable name you can start typing some characters and then press enter to finish.
+
 ![eclipsetipformethod](https://github.com/sairamaj/programmingclass/blob/master/images/eclipsetipformethod.png)
 
 For variables you can press Ctrl and Space then you will see variables.
