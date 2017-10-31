@@ -25,8 +25,10 @@
         }
     }
 
-![overloadmatching](https://github.com/sairamaj/programmingclass/blob/master/images/overloadmatching.png)
+
 ```
+![overloadmatching](https://github.com/sairamaj/programmingclass/blob/master/images/overloadmatching.png)
+
 * New data type Char
 ```java
         char grade = 'A';       // can take only single letters.
@@ -121,14 +123,14 @@ When you defining a method you are creating a index card which contains the foll
 Preparing the index card with some instructions and giving it some name like below
  ![methoddefining](https://github.com/sairamaj/programmingclass/blob/master/images/methoddefining.png)
 
-This is like you created this index card and put it in your pocket. Just because you have written instructions on a card does not mean somebody will follow it. You have to give this card to somebody and ask him to follow the __instructions__. While giving this card , if the card says any __inputs__ then you have to give him to that person and if the card says __outputs__ then you can expect from that person.
+This is like you created this index card and put it in your pocket. Just because you have written instructions on a card does not mean somebody will follow it. You have to give this card to somebody and ask him to follow the __instructions__. While giving this card , if the card says any __inputs__ , then you have to give inputs to that person and if the card says __outputs__, then you can expect from that person.
+
+Using(calling) the method is ask them to follow the instruction in the card.
+![methoddefining](https://github.com/sairamaj/programmingclass/blob/master/images/usingmethods.png)
 
 Creating a index card(where you do once) is like __defining method__
 
 Somebody using this card and following the instructions(taking inputs and giving outputs) is like __using__ or __calling__ where you can do more than once.
-
-Using(calling) the method is ask them to follow the instruction in the card.
-![methoddefining](https://github.com/sairamaj/programmingclass/blob/master/images/usingmethods.png)
 
 # Methods calling other Methods
 The method we have written __readBook__ below will have generally multi steps, like checking out the book from library, reading the book and returning the book back to library.
@@ -200,7 +202,7 @@ class Application{
         }
     }
 ```
-We have problem here. We are asking the student to do each individual step instead of asking him to read the book (and let him/her to figure it out how to get book) and also in the process we forgot to tell him/her to return the book. Student need not be told each and every step and instead of just readBook method should be enough. Student class should not be allow to dictate individual steps while reading boo. What we should do is not allow checkOutFromLibrary, readTheBook, returnToLibrary outside Student class and java allows this by specifying __private__ keyword like below
+We have problem here. We are asking the student to do each individual step instead of asking him to read the book (and let him/her to figure it out how to get book) and also in the process we forgot to tell him/her to return the book. Student need not be told each and every step and instead of just readBook method should be enough. Student class should not allow to dictate individual steps by outside while reading book. What we should do is, not allow checkOutFromLibrary, readTheBook, returnToLibrary outside Student class and java allows this by specifying __private__ keyword like below
 
 ```java
         private void checkOutFromLibrary(String bookName){
