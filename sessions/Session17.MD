@@ -9,12 +9,12 @@ As variables very important in programming lets recap some basic rules about var
 * You have to define a variable before you use
     * Below code is wrong as we are trying to use the variable before you define.
     * Think as computer where the instructions are followed line by line and as it sees __age = 10__ first and errors out even though you have define __int age__ in next line.
-    * ```java
+    ```java
         age = 10;
         int age;
     ```
 * You cannot define a variable multiple in the same method
-    * ``` java
+    ``` java
         int age = 10;
         String name = "joe";
         int age;        // No you cannot define again the age
@@ -24,7 +24,7 @@ As variables very important in programming lets recap some basic rules about var
     * Above __age__ is defined multiple times and __name__ defined once and used multile times which is correct.
 * A variable is __alive__ when it was __defined__ and __dead__ when it sees a closing flower bracket __}__
     * see below
-    * ```java
+    ```java
         class Student{
             void readBook(){                                        // line 1
                 String bookName = "Harry Potter";                   // line 2
@@ -34,7 +34,7 @@ As variables very important in programming lets recap some basic rules about var
     ```
     * bookName is alive one line 2 and dead on line 4
     * see another example
-    * ```java
+     ```java
 	    public static void main(String[] args) {
 		{
 			int age = 10;
@@ -46,7 +46,7 @@ As variables very important in programming lets recap some basic rules about var
 	}
     ```
 * You can define the same variables in different methods as they will be different.
-    * ```java
+    ```java
         class Student{
 
             void readBook(){
@@ -62,11 +62,11 @@ As variables very important in programming lets recap some basic rules about var
     ```
     * In above same __bookName__ has been defined in 2 different methods which is OK as they are in different methods
 * Standard way of defining variable is to use lower case letter
-    * ```java
+    ```java
         int age;
        ```
 * If there is a compound name then convention is to use __camelCase__ where each word first letter capitalized (except first one)
-    * ```java
+    ```java
         int bookName;
         int carSpeed;
     ```
