@@ -64,7 +64,7 @@ As variables very important in programming lets recap some basic rules about var
 * Standard way of defining variable is to use lower case letter
     ```java
         int age;
-       ```
+    ```
 * If there is a compound name then convention is to use __camelCase__ where each word first letter capitalized (except first one)
     ```java
         int bookName;
@@ -185,6 +185,7 @@ Lets discuss how one can convert a problem in to programming solution.
 * Step-15
     * Run the program
     * You will see output as __15__ which is correct.
+
 __Now you are done__
 
 # Summary
