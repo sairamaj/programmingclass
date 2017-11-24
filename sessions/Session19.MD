@@ -66,7 +66,7 @@ The preferred way is to call on class ( __Math.add(20,30)__). If you observe we 
         }
     }
 ```
-you will get error __Cannot make a static reference to the non-static field someValue1__. The reason once you make __static__ the method wont exists as part of object (but part of class). 
+you will get error __Cannot make a static reference to the non-static field someValue1__. The reason once you make __static__ the method wont exists as part of object (but it is part of class). 
 
 ## Lets see regular methods (non static)
 In order to understand the difference with __static__ and without ,lets come up with some add special method where it remembers last number and keeps adding to the previous total. 
@@ -132,10 +132,10 @@ Lets create 3 objects and see in pictures what static and non static methods hav
 In above __addSpecial__ is part of each object and can access __previousNumber__ where as __add__ is part of __class__ only and cannot access __previousNumber__ as it is part of object. Think of non static methods and class variables in the same box(object) hence can use class variales.
 
 ## When do you use static?
-From above observations you can see only when methods don't access class variables , you can declare them as __static__ and you call method on __class__ ( no need to create object)
+From above observations you can see, only when methods don't access class variables , you can declare them as __static__ and you call method on __class__ ( no need to create object)
 
 # Reuse
-You use reusing the existing in all the time in real life. Either you borrow from somebody and use it or use the one you made previously. It is the same in programming. You want to use which was done already and may take existing one and change a little bit and then use it.
+You use reusing the existing all the time in real life. Either you borrow from somebody and use it or use the one you made previously. It is the same in programming. You want to use which was done already and may take existing one and change a little bit and then use it.
 
 There were 2 kinds of reuse.
 
@@ -159,7 +159,7 @@ We have written a method to find absolute of given value, given 2 numbers to fin
 ```
 Above you are using __Math__ class that comes up with JDK which has lot of methods and __abs__, __max__ are some of them. You know they are __static__ as  you are able to use the class instead of creating object.
 
-If you type Math. in your eclipse you will see there are lot of methods shown in Math class which JDK has it like below.
+If you type Math. in your eclipse you will see there are lot of methods shown in Math class which JDK has it like below (__in eclipse type Math and then period and wait__ to see the list).
 
 ![jdkmathhelp](https://github.com/sairamaj/programmingclass/blob/master/images/jdkmathhelp.png)
 
@@ -208,7 +208,7 @@ Now change the __Dog__ class like below
 
 Now your program works fine.
 
-Lets see what is happening. You saw __Animal__ class which has been written by somebody and saw __feed__ method in it and you want like it. But you have dog which is animal but has some other extra things when compared to other animals. You want to have Dog class but wanted to share the feed of animal. You have  __extended__ with __extends__ key word in Dog and suddenly all the methods in __Animal__ became part of __Dog__ class.
+Lets see what is happening. You saw __Animal__ class which has been written by somebody and saw __feed__ method in it and you like it. But you have dog which is animal but has some other extra things when compared to other animals. You want to have Dog class but wanted to share the feed of animal. You have  __extended__ with __extends__ key word in Dog and suddenly all the methods in __Animal__ became part of __Dog__ class.
 
 The second principal of __OOP__ is __Inheritance__ which is all about __reuse__
 

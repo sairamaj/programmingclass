@@ -6,15 +6,18 @@ As variables very important in programming lets recap some basic rules about var
 * Variables has to have one word
     * age, name
     * car Speed ( invalid as spaces are not allowed)
+
 * You have to define a variable before you use
     * Below code is wrong as we are trying to use the variable before you define.
-    * Think as computer where the instructions are followed line by line and as it sees __age = 10__ first and errors out even though you have define __int age__ in next line.
-    ```java
+```java
         age = 10;
         int age;
-    ```
+```
+
+    * Think as computer where the instructions are followed line by line and as it sees __age = 10__ first and errors out even though you have define __int age__ in next line.
+
 * You cannot define a variable multiple in the same method
-    ``` java
+``` java
         int age = 10;
         String name = "joe";
         int age;        // No you cannot define again the age
@@ -22,6 +25,7 @@ As variables very important in programming lets recap some basic rules about var
         name = "bob";   // You can use as many time as you want.
     ```
     * Above __age__ is defined multiple times and __name__ defined once and used multile times which is correct.
+
 * A variable is __alive__ when it was __defined__ and __dead__ when it sees a closing flower bracket __}__
     * see below
     ```java
@@ -36,74 +40,77 @@ As variables very important in programming lets recap some basic rules about var
     * see another example
      ```java
 	    public static void main(String[] args) {
-		{
-			int age = 10;
-			System.out.println("age is:" + age);
-		}
+		    {
+			    int age = 10;
+			    System.out.println("age is:" + age);
+		    }
 
-        // age cannot be used here as per the above rules as age is dead in above { line
-		System.out.println("age is:" + age);
-	}
+            // age cannot be used here as per the above rules as age is dead in above { line
+		    System.out.println("age is:" + age);
+	    }
     ```
+
 * You can define the same variables in different methods as they will be different.
-    ```java
+```java
         class Student{
 
             void readBook(){
-                String bookName = "Harry Potter";
+                String bookName = "Harry Potter";  // bookName variable in readBook method
                 System.out.println("reading book:" + bookName);
             }
 
             void readBook(int minutesToRead){
-                String bookName = "Percy Jackson";
-                System.out.println("reading book:" + bookName + " for :" + minutesToRead);
+                String bookName = "Percy Jackson"; // bookName variable in another method which is OK.
+                System.out.println("reading book:"   + bookName + " for :" + minutesToRead);
             }
         }
-    ```
+```
     * In above same __bookName__ has been defined in 2 different methods which is OK as they are in different methods
+
 * Standard way of defining variable is to use lower case letter
-    ```java
+```java
         int age;
-    ```
-* If there is a compound name then convention is to use __camelCase__ where each word first letter capitalized (except first one)
-    ```java
+```
+    * If there is a compound name then convention is to use __camelCase__ where each word first letter capitalized (except first one)
+```java
         int bookName;
         int carSpeed;
-    ```
+```
+
 # Solving a given problem
-Lets discuss how one can convert a problem in to programming solution.
-* Step-1 First you will be asked to do something
-* Step-2 You need to decide which class is appropriate for this. Remember first principle which is __Encapsulation__ (packaging related stuff). __class__ is singular __noun__.
-* Step-3 Once you decided the class name, then you have to say yourself , OK I need to write a method
-* Step-4 Now you need to decide the name of the __method__ which will be __verb__
-* Step-5 You need to find out whether there are any inputs.
-* Step-6 Next to is to see whether this method has any output.
-* Step-7 At this time you are ready to type in something which is __syntax__
-* Step-8 Fill inputs
-* Step-9 Type any output data type.
-* Step-10 If the method is returning something then you put some dummy value it ( the real logic will come afterwards)
-* Step-11 Create a object in main method for this class.
-* Step-12 Call the method with some parameters and print if any outputs are coming
-* Step-13 Run the program and you will get dummy value which you have put in the method.
-* Step-14 Now you are ready to put real logic in the method to make it work correctly.
-* Step-15 Run now and see that program is working fine. You are now __done__.
+Lets discuss how one can convert a problem in to programming code.
+* __Step-1__  First you will be asked to do something
+* __Step-2__  You need to decide which class is appropriate for this. Remember first principle which is __Encapsulation__ (packaging related stuff). __class__ is singular __noun__.
+* __Step-3__  Once you decided the class name, then you have to say yourself , OK I need to write a method
+* __Step-4__  Now you need to decide the name of the __method__ which will be __verb__
+* __Step-5__  You need to find out whether there are any inputs.
+* __Step-6__  Next to is to see whether this method has any output.
+* __Step-7__  At this time you are ready to type in something which is __syntax__
+* __Step-8__  Fill inputs
+* __Step-9__  Type any output data type.
+* __Step-10__ If the method is returning something then you put some dummy value it ( the real logic will come afterwards)
+* __Step-11__ Create a object in main method for this class.
+* __Step-12__ Call the method with some parameters and print if any outputs are coming
+* __Step-13__ Run the program and you will get dummy value which you have put in the method.
+* __Step-14__ Now you are ready to put real logic in the method to make it work correctly.
+* __Step-15__ Run now and see that program is working fine. You are now __done__.
 
 ## Lets solve some problem by following above steps.
-* Step-1
+* __Step-1__
     * find given two numbers ,print the maximum value of those numbers.
-* Step-2
+* __Step-2__
     * Seeing the above problem this relates to some math problem and come up with class __Math__
-* Step-3
+* __Step-3__
     * Ok I need to write a method to solve this problem in the class.
-* Step-4
+* __Step-4__
     * method name will be __getMax__
-* Step-5
+* __Step-5__
     * inputs will be 2 numbers.
-* Step-6
+* __Step-6__
     * one output which is maximum of 2 numbers.
-* Step-7
+* __Step-7__
     * Syntax
-    * ```java
+     ```java
         class Math{
 
             getMax(){
@@ -111,9 +118,9 @@ Lets discuss how one can convert a problem in to programming solution.
             }
         }
     ```
-* Step-8
+* __Step-8__
     * Fill inputs
-    * ```java
+    ```java
         class Math{
 
             getMax(int num1, int num2){
@@ -121,9 +128,9 @@ Lets discuss how one can convert a problem in to programming solution.
             }
         }
     ```
-* Step-9
+* __Step-9__
     * Output
-    * ```java
+    ```java
         class Math{
 
             int getMax(int num1, int num2){
@@ -131,9 +138,9 @@ Lets discuss how one can convert a problem in to programming solution.
             }
         }
     ```
-* Step-10 
+* __Step-10__ 
     * Dummy return value
-    * ```java
+    ```java
         class Math{
 
             int getMax(int num1, int num2){
@@ -141,18 +148,18 @@ Lets discuss how one can convert a problem in to programming solution.
             }
         }
     ```
-* Step-11
+* __Step-11__
     * create object
-    * ```java
+   ```java
         class Application{
             public static void main(String[] args){
                 Math m1 = new Math();
             }
         }   
     ```
-* Step-12
+* __Step-12__
     * call method
-    * ```java
+```java
         class Application{
             public static void main(String[] args){
                 Math1 m1 = new Math();
@@ -161,12 +168,12 @@ Lets discuss how one can convert a problem in to programming solution.
             }
         }
     ```
-* Step-13
+* __Step-13__
     * Run the program
     * The result you will see is __0__ which is the dummy value you have put it in the method.
-* Step-14
+* __Step-14__
     * Put real logic
-    * ```java
+     ```java
         class Math{
 
             int getMax(int num1, int num2){
@@ -182,7 +189,7 @@ Lets discuss how one can convert a problem in to programming solution.
             }
         }
     ```
-* Step-15
+* __Step-15__
     * Run the program
     * You will see output as __15__ which is correct.
 
