@@ -134,6 +134,92 @@ In above __addSpecial__ is part of each object and can access __previousNumber__
 ## When do you use static?
 From above observations you can see only when methods don't access class variables , you can declare them as __static__ and you call method on __class__ ( no need to create object)
 
+# Reuse
+You use reusing the existing in all the time in real life. Either you borrow from somebody and use it or use the one you made previously. It is the same in programming. You want to use which was done already and may take existing one and change a little bit and then use it.
+
+There were 2 kinds of reuse.
+
+## Reuse 1
+* You want something to be done but there has been exactly the same thing done by others. One such thing in Java programming is JDK ( Java Developer Kit). JDK comes with your default installation of eclipse.
+
+We have written a method to find absolute of given value, given 2 numbers to find out a maximum number. JDK has done these things already for you.
+
+```java
+    class Application{
+        public static void main(String[] args){
+            // to find out absolute value.
+            int value = Math.abs(-10);
+            System.out.println(value);
+            
+            value = Math.max(10,20);
+            System.out.println(value);
+          
+        }
+    }
+```
+Above you are using __Math__ class that comes up with JDK which has lot of methods and __abs__, __max__ are some of them. You know they are __static__ as  you are able to use the class instead of creating object.
+
+If you type Math. in your eclipse you will see there are lot of methods shown in Math class which JDK has it like below.
+
+![jdkmathhelp](https://github.com/sairamaj/programmingclass/blob/master/images/jdkmathhelp.png)
+
+In future classes we will be using other JDK classes.
+
+## Reuse 2
+Another kind of reuse is you saw something already made and you like most of it but wanted to change little bit. Here comes the second principle of OOPs which is __inheritance__.
+
+### Inheritance
+Lets see inheritance in action.
+
+Write __Animal__ class like below
+```java
+    class Animal{
+        void feed(){
+            System.out.println("animal is eating.");
+        }
+    }
+```
+
+Write __Dog__ class like below
+```java
+    class Dog{
+        // Nothing in it.
+    }
+```
+
+Write __Application__ class with __main__ method in it.
+```java
+    class Application{
+        public static void main(String[] args){
+
+            Dog d1 = new Dog();
+            d1.feed();
+        }
+    }
+```
+The above program should give __error__ as Dog does not have method called feed.
+
+Now change the __Dog__ class like below
+```java
+    class Dog extends Animal{
+        // Nothing in it.
+    }
+```
+
+Now your program works fine.
+
+Lets see what is happening. You saw __Animal__ class which has been written by somebody and saw __feed__ method in it and you want like it. But you have dog which is animal but has some other extra things when compared to other animals. You want to have Dog class but wanted to share the feed of animal. You have  __extended__ with __extends__ key word in Dog and suddenly all the methods in __Animal__ became part of __Dog__ class.
+
+The second principal of __OOP__ is __Inheritance__ which is all about __reuse__
+
+Both kinds of reuse we saw are very important when we want to write big applications as we don't want to build everything and want to use if something already available. We will be using this in upcoming classes.
+
+# Summary
+* Learned about __static__ methods
+* Saw  __reuse__ with JDK and __inheritance__
+
+
+
 
 
 
