@@ -159,7 +159,7 @@ Lets discuss how one can convert a problem in to programming code.
     ```
 * __Step-12__
     * call method
-```java
+    ```java
         class Application{
             public static void main(String[] args){
                 Math1 m1 = new Math();
