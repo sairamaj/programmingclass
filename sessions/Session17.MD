@@ -9,15 +9,14 @@ As variables very important in programming lets recap some basic rules about var
 
 * You have to define a variable before you use
     * Below code is wrong as we are trying to use the variable before you define.
-```java
+    ```java
         age = 10;
         int age;
-```
-
+    ```
     * Think as computer where the instructions are followed line by line and as it sees __age = 10__ first and errors out even though you have define __int age__ in next line.
 
 * You cannot define a variable multiple in the same method
-``` java
+   ``` java
         int age = 10;
         String name = "joe";
         int age;        // No you cannot define again the age
@@ -28,7 +27,7 @@ As variables very important in programming lets recap some basic rules about var
 
 * A variable is __alive__ when it was __defined__ and __dead__ when it sees a closing flower bracket __}__
     * see below
-    ```java
+     ```java
         class Student{
             void readBook(){                                        // line 1
                 String bookName = "Harry Potter";                   // line 2
