@@ -127,7 +127,7 @@ We have used class variable __previousNumber__ to keep track of what was given (
 ```
 Lets create 3 objects and see in pictures what static and non static methods have it.
 
-![staticvsnonstatic](https://github.com/sairamaj/programmingclass/blob/master/images/staticandnonstatic.png)
+
 
 In above __addSpecial__ is part of each object and can access __previousNumber__ where as __add__ is part of __class__ only and cannot access __previousNumber__ as it is part of object. Think of non static methods and class variables in the same box(object) hence can use class variales.
 
