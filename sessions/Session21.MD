@@ -104,7 +104,7 @@ There are lot of JDK packages and  you can think of them as boxes with classes i
 ![javapackagesamples](https://github.com/sairamaj/programmingclass/blob/master/images/javapackagesamples.png)
 
 # Array data type
-Lets ask a question about your age and you will come up with one single answer. If I have another question like your favorite numbers you may come up with more than one numbers. In order to keep track of one number you will use data type __int__ and in order to have multiple values in a single variable you will be using __array__
+Lets ask a question about your age and you will come up with one single answer. If I have another question like your favorite numbers you may come up with more than one number. In order to keep track of one number you will use data type __int__ and in order to have multiple values in a single variable you will be using __array__
 
 ```java
     int age;
@@ -206,7 +206,7 @@ If you observe above we have used the __Constructor__ ( you know constructor is 
 # Homework
 * Add a label to the above window
 * Your window should like below
-![guihomework](https://github.com/sairamaj/programmingclass/blob/master/images/guihomework.png)
+* ![guihomework](https://github.com/sairamaj/programmingclass/blob/master/images/guihomework.png)
 * Tips
     * construct object of __Label__
     * add this lable object to the frame object you have created using __add__
