@@ -78,7 +78,7 @@ JFrame.EXIT_ON_CLOSE is constant (we will learn in next class) where default act
 
 ### JPanel
 The __JFrame__ we did above is like picture frame and __JPanel__ is like portion in the frame. You can create __JPanel__ in __JFrame__.
-![JPanelinfo]((https://github.com/sairamaj/programmingclass/blob/master/images/JPanelinfo.png)
+![JPanelinfo](https://github.com/sairamaj/programmingclass/blob/master/images/JPanelinfo.png)
 
 ## Lets add one Panel to the frame
 ```java
@@ -99,6 +99,7 @@ Now we can put buttons in panel.
 		p.add(b);	// adding button to panel
 ```
 Here we have created __JButton__ object and added to __JPanel__
+![JButton](https://github.com/sairamaj/programmingclass/blob/master/images/JButton.png)
 
 Complete program 
 ```java
