@@ -44,3 +44,79 @@ If you observe above what we did is
 ## Getting help in Eclipse
 if you type variable followed by period then eclipse will bring the methods in the object and its help like below
 ![eclipseintellisenseformethod](https://github.com/sairamaj/programmingclass/blob/master/images/eclipseintellisenseformethod.png)
+
+# Calculator
+Lets start writing a calculator program.
+
+* Start with creating project called Calculator
+* Add __Application__ class.
+* In main function do the following like explained above.
+
+```java
+
+import javax.swing.*;
+
+public class Application {
+
+	public static void main(String[] args) {
+		JFrame f = new JFrame();
+		f.setSize(1000,1000);
+		f.setVisible(true);
+	}
+}
+    
+```
+
+If you run the above program window appears. By clicking the window it appears window closing but the application remains ( you can check this by using TaskManager Details tab a program called __javaw__ remain, you need to kill this.)
+
+You can fix this by adding below line
+```java
+    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+```
+
+JFrame.EXIT_ON_CLOSE is constant (we will learn in next class) where default action is to close the application.
+
+### JPanel
+The __JFrame__ we did above is like picture frame and __JPanel__ is like portion in the frame. You can create __JPanel__ in __JFrame__.
+![JPanelinfo]((https://github.com/sairamaj/programmingclass/blob/master/images/JPanelinfo.png)
+
+## Lets add one Panel to the frame
+```java
+		// create Panel
+		JPanel p = new JPanel();
+		p.setBackground(Color.BLUE);
+		f.add(p);		// add panel to the 
+		f.setVisible(true);
+```
+With above you should see blue color panel filled in frame.What we did is created a __JPanel__ object and added this to __JFrame__ object.
+
+## Buttons on Panel
+Now we can put buttons in panel.
+```java
+		// create button
+		JButton b = new JButton();
+		b.setText("1");
+		p.add(b);	// adding button to panel
+```
+Here we have created __JButton__ object and added to __JPanel__
+
+Complete program 
+```java
+	    JFrame f = new JFrame();
+		f.setSize(1000,1000);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		// create Panel
+		JPanel p = new JPanel();
+		p.setBackground(Color.BLUE);
+		f.add(p);		// add panel to the 
+	
+		
+		// create button
+		JButton b = new JButton();
+		b.setText("1");
+		p.add(b);	// adding button to panel
+		
+		// Make visible at the end so that button and panel will show up
+		f.setVisible(true);
+```
