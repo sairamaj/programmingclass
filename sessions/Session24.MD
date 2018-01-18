@@ -13,7 +13,7 @@ Lets exit the freeway and learn new data type __enum__
 ```java
 public class Person {
 	
-	void eat(int fruit) {
+	void eatFruit(int fruit) {
 		if (fruit == 1) {
 			System.out.println("eating Apple");
 		} else if (fruit == 2) {
@@ -51,6 +51,15 @@ If you see the method we need to remember 1 is Apple and 2 is Banana. Now you ca
 
 ## Defining mapping through int
 Add a class __Fruit__ to the project like below
+
+```java
+
+public class Fruit {
+	static int Apple=1;
+	static int Banana=2;
+}
+
+```
 
 Modify the Application class like below
 ```java
@@ -120,7 +129,7 @@ public enum Fruit {
 Lets add new method in Person class like below
 
 ```java
-	void eat(enumlearn.Fruit f) {
+	void eatFruit(enumlearn.Fruit f) {
 		System.out.println("eating " + f);
 	}
 ```
@@ -128,8 +137,8 @@ Lets use this method in Application class like below
 
 ```java
 		Person p = new Person();
-		p.eat(enumlearn.Fruit.Apple);
-		p.eat(enumlearn.Fruit.Banana);
+		p.eatFruit(enumlearn.Fruit.Apple);
+		p.eatFruit(enumlearn.Fruit.Banana);
 ```
 Now with new method we have 2 advantages
 * Readability (now we know we are passing either Apple or Banana not 1 or 2)
