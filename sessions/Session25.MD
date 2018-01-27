@@ -7,22 +7,22 @@ This class lets continue our journey on Calculator. We have finished creating wi
 Lets see the code 
 ```java
    JFrame f = new JFrame();
-		f.setSize(1000,1000);
-		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-		// create Panel
-		JPanel p = new JPanel();
-		p.setBackground(Color.BLUE);
-		f.add(p);		// add panel to the 
-	
-		
-		// create button
-		JButton b = new JButton();
-		b.setText("1");
-		p.add(b);	// adding button to panel
-		
-		// Make visible at the end so that button and panel will show up
-		f.setVisible(true);
+    f.setSize(1000,1000);
+    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    
+    // create Panel
+    JPanel p = new JPanel();
+    p.setBackground(Color.BLUE);
+    f.add(p);		// add panel to the 
+
+    
+    // create button
+    JButton b = new JButton();
+    b.setText("1");
+    p.add(b);	// adding button to panel
+    
+    // Make visible at the end so that button and panel will show up
+    f.setVisible(true);
 ```
 Before moving on lets change the variables names and some comments. Variable names are important in understanding the flow of logic and comments make them to see why we are calling some methods
 
@@ -266,5 +266,218 @@ public class Application {
 ```
 and window will look like below
 ![calculator_numberpanel.png](https://github.com/sairamaj/programmingclass/blob/master/images/calculator_numberpanel.png)
+
+### Breaking the big program
+Our program is becoming big and we need to break this in to pieces. We have learned Java is all about classes and objects. So we have to break this in to smaller classes and use them. Lets recap the lesson where we have learned __inheritance__ (reuse) [here](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session19.MD)
+
+```java
+ class Animal{
+        void feed(){
+            System.out.println("animal is eating.");
+        }
+    }
+
+     class Dog extends Animal{
+        // Nothing in it.
+        void walk(){
+            feed(); // lets feed it first
+            // super.feed();
+
+            // In walk method we have feed which is defined in Animal can be called
+            // we have two ways of calling
+            //      simply using the method name 
+            //      or using super.feed() ( super here is Animcal)
+        }
+    }
+```
+
+### NumberPanel class
+Lets move everything related to creating number buttons and its panel to its own panel like below
+```java
+public class NumberPanel {
+
+}
+
+```
+
+As our __NumberPanel__ is panel lets reuse __JPanel__ and our keyword is to use __extends__
+```java
+import javax.swing.*;
+
+// NumberPanel is a Panel
+public class NumberPanel extends JPanel {
+
+}
+```
+Remember if we can read NumberPanel __is a__ JPanel which makes sense then we have done right ( this is test for making sure we are using inheritance right)
+
+Create constructor in NumberPanel
+```java
+import javax.swing.*;
+
+// NumberPanel is a Panel
+public class NumberPanel extends JPanel {
+	// Constructor.
+	NumberPanel(){
+		
+	}
+}
+```
+
+Lets identify all the calls related to number panel in __Application__ class we have done above
+```java
+		// Create layout with 4 rows and colums to show the buttons
+		GridLayout numberPanelLayout = new GridLayout(4, 3);
+		// Note: You will be setting this layout on number panel as buttons are added to numberpanel.
+		numberPanel.setLayout(numberPanelLayout);
+		
+		// create 10 buttons
+		for(int i=0; i<10; i++) {
+			// setText method takes String data type and we have i here as Int
+			// Again we need to look for a method for converting a number in to string
+			// Looks like there exists one called Integer class
+			String buttonText = Integer.toString(i);
+			// Above method converts a Int data type to String type
+			// Input: number of data type Int
+			// Output: String data type
+			JButton numberButton = new JButton();
+			Font font = new Font("Serif", Font.BOLD, 66);
+			numberButton.setFont(font);
+			numberButton.setText(buttonText);
+			
+			// adding button to panel
+			numberPanel.add(numberButton); 
+		}
+```
+
+Move related to panel and buttons to the __NumberPanel__ constructor
+```java
+import java.awt.Font;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+
+// NumberPanel is a Panel
+public class NumberPanel extends JPanel {
+	
+	// Constructor.
+	NumberPanel(){
+		// Create layout with 4 rows and colums to show the buttons
+		GridLayout numberPanelLayout = new GridLayout(4, 3);
+		// Note: You will be setting this layout on number panel as buttons are added to numberpanel.
+		numberPanel.setLayout(numberPanelLayout);
+		
+		// create 10 buttons
+		for(int i=0; i<10; i++) {
+			// setText method takes String data type and we have i here as Int
+			// Again we need to look for a method for converting a number in to string
+			// Looks like there exists one called Integer class
+			String buttonText = Integer.toString(i);
+			// Above method converts a Int data type to String type
+			// Input: number of data type Int
+			// Output: String data type
+			JButton numberButton = new JButton();
+			Font font = new Font("Serif", Font.BOLD, 66);
+			numberButton.setFont(font);
+			numberButton.setText(buttonText);
+			
+			// adding button to panel
+			numberPanel.add(numberButton); 
+		}
+	}
+}
+```
+
+As NumberPanel is extending JPanel all the methods in JPanel are available in NumberPanel (__inheritance__)
+We need to remove __numberPanel__ variable here .
+
+```java
+import java.awt.Font;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+
+// NumberPanel is a Panel
+public class NumberPanel extends JPanel {
+	
+	// Constructor.
+	NumberPanel(){
+		// Create layout with 4 rows and colums to show the buttons
+		GridLayout numberPanelLayout = new GridLayout(4, 3);
+		// Note: You will be setting this layout on number panel as buttons are added to numberpanel.
+		setLayout(numberPanelLayout);
+		
+		// create 10 buttons
+		for(int i=0; i<10; i++) {
+			// setText method takes String data type and we have i here as Int
+			// Again we need to look for a method for converting a number in to string
+			// Looks like there exists one called Integer class
+			String buttonText = Integer.toString(i);
+			// Above method converts a Int data type to String type
+			// Input: number of data type Int
+			// Output: String data type
+			JButton numberButton = new JButton();
+			Font font = new Font("Serif", Font.BOLD, 66);
+			numberButton.setFont(font);
+			numberButton.setText(buttonText);
+			
+			// adding button to panel
+			add(numberButton); 
+		}
+	}
+}
+
+```
+
+Lets revisit this __NumberPanel__ constructor. Here we are creating __JButton__ and adding using __add__ method ( we can use __super.add__ which will be the same.).
+
+Now in __Application__ class __main__ method we need to create __NumberPanel__ object like instead of __JPanel__.
+
+Replace below 
+```java
+		// create Panel
+	JPanel numberPanel = new JPanel();
+```
+
+with
+```java
+    NumberPanel numberPanel = new NumberPanel();
+```
+
+With this we have below program
+```java
+// Importing Color and other related classes
+import java.awt.*;
+//Importing Swing apis (JFrame,JPanel,JButton) classes
+import javax.swing.*;
+
+public class Application {
+
+	public static void main(String[] args) {
+
+		// Create frame which holds panels	
+		// create frame with title through constructor
+		JFrame frame = new JFrame("Calculator");
+		frame.setSize(1000, 1000);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+		// create NumberPanel (which will create buttons and add it)
+		NumberPanel numberPanel = new NumberPanel();
+		numberPanel.setBackground(Color.BLACK);
+		// add panel to the frame
+		frame.add(numberPanel); 
+		
+
+		// Make visible at the end so that button and panel will show up
+		frame.setVisible(true);
+	}
+}
+```
+
+# Summary
+* We have modified to add 10 buttons using __for__ loop
+* We have used __GridLayout__ to set buttons in certain order
+* We have created __NumberPanel__ extending __JPanel__ ( __inheritance__)
+* We have moved all the related stuff in to separate class called __NumberPanel__
 
 
