@@ -174,3 +174,26 @@ public class Application {
 * Learned __switch__
 * Created __OperationalPanel__ and added to frame.
 
+# Homework
+* We need to practice writing methods in class
+* Create a class called Student
+    * method not taking any inputs and outputs
+        * doHomework
+        * inputs: none
+        * output: none
+    * method taking one input no outputs
+        * readBook
+        * input: bookName
+        * output : none
+    * method taking 2 inputs and no outputs
+        * readBook
+        * inputs: bookName and numberOfMinutes
+        * outputs: none
+    * method not taking any inputs but returning output
+        * getNumberOfHoursPlayed
+        * input: none
+        * output: number of hours played.
+    * method taking 2 inputs and one output
+        * play
+        * inputs: gamename, numberOfMinutesPlayed
+        * output: result (won/lost)
