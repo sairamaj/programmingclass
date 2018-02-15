@@ -365,7 +365,7 @@ public class NumberPanel extends JPanel {
 		// Create layout with 4 rows and colums to show the buttons
 		GridLayout numberPanelLayout = new GridLayout(4, 3);
 		// Note: You will be setting this layout on number panel as buttons are added to numberpanel.
-		numberPanel.setLayout(numberPanelLayout);
+		setLayout(numberPanelLayout);
 		
 		// create 10 buttons
 		for(int i=0; i<10; i++) {
@@ -382,7 +382,7 @@ public class NumberPanel extends JPanel {
 			numberButton.setText(buttonText);
 			
 			// adding button to panel
-			numberPanel.add(numberButton); 
+			add(numberButton); 
 		}
 	}
 }
