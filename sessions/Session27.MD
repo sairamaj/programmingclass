@@ -1,7 +1,7 @@
 # Recap
 We have defined the calculator with operational panel and number panel and our calculator looks like this now
 
-![calculator_3panels](https://github.com/sairamaj/programmingclass/blob/master/images/calculator_3panels.png)
+![calculator_numberpaneloperationpanel](https://github.com/sairamaj/programmingclass/blob/master/images/calculator_numberpaneloperationpanel.png)
 
 What we are going to do is to add ResultPanel which will show the results of calculation.
 
@@ -57,7 +57,7 @@ Next add Result Panel which will come at [1,1] and we will add dummy panel in [1
 
 Now our calculator will be shown like below
 
-![calculator_numberpaneloperationpanelresultpanel.png](https://github.com/sairamaj/programmingclass/blob/master/images/calculator_numberpaneloperationpanelresultpanel.png.png)
+![calculator_numberpaneloperationpanelresultpanel.png](https://github.com/sairamaj/programmingclass/blob/master/images/calculator_numberpaneloperationpanelresultpanel.png)
 
 Now __Application__ class is like below
 ```java
