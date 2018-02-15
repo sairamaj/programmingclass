@@ -1,7 +1,7 @@
 # Recap
 We have defined the calculator with operational panel and number panel and our calculator looks like this now
 
-![calculator_numberpaneloperationpanelresultpanel](https://github.com/sairamaj/programmingclass/blob/master/images/calculator_numberpaneloperationpanelresultpanel.png)
+![calculator_3panels](https://github.com/sairamaj/programmingclass/blob/master/images/calculator_3panels.png)
 
 What we are going to do is to add ResultPanel which will show the results of calculation.
 
