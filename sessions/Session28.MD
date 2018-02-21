@@ -100,7 +100,7 @@ Now that we know interfaces lets revisit the calculator class.
 ## Where are we?
     We have number panel, operation panel and result panel in our calculator and looks like below
 
-![calculatorbeforeimplentingactionlistener]((https://github.com/sairamaj/programmingclass/blob/master/images/calculatorbeforeimplentingactionlistener.png))
+![calculatorbeforeimplentingactionlistener](https://github.com/sairamaj/programmingclass/blob/master/images/calculatorbeforeimplentingactionlistener.png)
 
 ### Classes we have written
 * Application
@@ -179,7 +179,7 @@ Lets show a message whenever user clicks button
 
 Now when you click button you will see the message like below
 
-![buttonclicked]((https://github.com/sairamaj/programmingclass/blob/master/images/buttonclicked.png))
+![buttonclicked](https://github.com/sairamaj/programmingclass/blob/master/images/buttonclicked.png)
 
 We want to know what button is clicked. Look there is input to the __actionPerformed__ where some of the information about which button is clicked. It is object and you can see what methods exists and looks like there is method 
 
@@ -191,7 +191,7 @@ We want to know what button is clicked. Look there is input to the __actionPerfo
 	}
 ```
 
-![buttonclickedwithnumber]((https://github.com/sairamaj/programmingclass/blob/master/images/buttonclickedwithnumber.png))
+![buttonclickedwithnumber](https://github.com/sairamaj/programmingclass/blob/master/images/buttonclickedwithnumber.png)
 
 Full NumberPanel looks like below
 
