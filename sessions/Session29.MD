@@ -8,7 +8,7 @@ Lets show the user clicked button in Result panel text box
 ## Objects talk to each other through methods
 Lets take real time example where I want to borrow a book from you. There are 2 ways of getting this book from you.
 1. Go to your room , search the book shelf and grab the book and walk away
-2. Stay outside your room and ask you for the book where you know where the book is there and give it to me.
+2. Stay outside your room and ask you for the book and you know where the book exists and give it to me.
 
 I am sure you like the second option. For one reason is you don't want anybody to disturb your room and look for the book. Your room is private to yourself. 
 
@@ -24,7 +24,7 @@ Now we want __NumberPanel__ to talk to __ResultPanel__ , give the number and ask
 	}
 ```
 
-Here we will be using the __JTextField__ which we have in result panel. Before that the JTextField which we have added in constructor should be declared a class level. As we are creating this in constructor we need to hold on to it in class level which can be accessed in other methods in class.
+Here we will be using the __JTextField__ which we have in result panel. Before that the JTextField which we have added in Constructor should be declared at class level. As we are creating this in Constructor, we need to hold on to it in class level so that it can be accessed in other methods in class.
 
 ```java
 // ResultPanel is a JPanel
