@@ -24,7 +24,7 @@ Now we want __NumberPanel__ to talk to __ResultPanel__ , give the number and ask
 	}
 ```
 
-Here we will be using the __JTextField__ which we have in result panel. Before that the JTextField which we have added in Constructor should be declared at class level. As we are creating this in Constructor, we need to hold on to it in class level so that it can be accessed in other methods in class.
+Here we will be using the __JTextField__ which we have in result panel. Before that the JTextField which we have added in Constructor should be declared at class level. As we are creating this in Constructor, we need to hold on to it in class level so that it  can be accessed in other methods in class.
 
 ```java
 // ResultPanel is a JPanel

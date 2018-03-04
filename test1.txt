@@ -1,0 +1,40 @@
+1- Define
+	-RAM
+	-CPU
+2 What is smallest information you can store in computer
+3 What is ASCII?
+4 Why learn java ( one sentence )
+5 What is syntax? (one word)
+6- Give 2 syntaxes in Java
+	-
+	-
+7 Write 2 keywords you have used in your Java program
+8 What is data type?
+9 Give 2 data types Java has
+10 What is class?
+11 What is object?
+12 Where does a program start (give the method)
+13 what is method?
+14 define static (one word)
+15 Define 2 Object Oriented principles and explain them in one sentence each
+
+
+On computer
+- Each program will be in separate project. Project name is like Test and number which corresponds to the question. i.e for the first one will have Test1 and second one will be Test2 and so on
+1 Write program which tells given number (no need to ask the user and you can have some number in program) is odd or even?
+2- Write program to count numbers backward from 100 every even number up to 0)
+3- Write a class called Car with the following methods
+    a)	method - start
+	inputs - none
+	ouput  - none
+    b)  method - getNumberofWheels
+	inputs - none
+	output - number of wheels
+
+    c)  method - changeOil
+	input  - oil name
+	output - success or fail data type
+
+
+
+
