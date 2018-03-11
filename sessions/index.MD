@@ -1,4 +1,4 @@
-x  |    Sessions                                                                   
+  |    Sessions                                                                   
   | -----------------------------------------------------     
   | [Session 1 - Computer fundamentals](https://github.com/sairamaj/programmingclass/blob/master/sessions/First.MD)
   | [Session 2 - Operating System & HelloWorld Java](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session2.MD)
