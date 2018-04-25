@@ -23,4 +23,4 @@
   | [Session 27 - Adding more panels to Calcualtor ](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session27.MD)
   | [Session 28 - Interfaces ](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session28.MD)
   | [Session 29 - Objects talk to each other through methods ](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session29.MD)
-  
+  | [Session 30 - CRC ](https://github.com/sairamaj/programmingclass/blob/master/sessions/Session30.MD)
