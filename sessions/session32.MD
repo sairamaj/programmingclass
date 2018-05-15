@@ -123,4 +123,81 @@ While you  stepping over like this in for loop, you will see only 2 times going 
 ### Will Debug will show the problem?
 NO. It will not show it will give the __clues__ and  you need to find out what is the problem from the clues just like detective solves the problem from the clues.
 
+## Moving Counting functionality in to class
+If you want to find out the count for different numbers then your program will become little messy. Also if you want something like below
+
+ |   number    |    count   |
+ | ------------| -----------|
+ |    1        |     1      |
+ |    2        |     3      |
+ |    3        |     6      |
+ |    4        |    10      |
+ |    5        |    15      |
+
+ then you need to make lot of variables and lot of for loops. Lets see how we can move this in to class and then use to find out for different variables.
+
+ ```java
+ public class PatternCalculator {
+	public int calculateSimplePattern(int input) {
+		int output = 0;
+		for (int i = 1; i <= input; i++) {
+			output = output + i; // add i to the previous output.
+		}
+		return output;
+	}
+}
+ ```
+
+```java
+public class Application {
+	public static void main(String[] args) {
+		PatternCalculator calculator = new PatternCalculator();
+		int output = calculator.calculateSimplePattern(3);
+		System.out.println(output);
+	}
+}
+```
+
+Lets make method __calcualteSimplePattern__ to __static__ (remember static means shared and as the method is not using any class variables)
+
+```java
+ public class PatternCalculator {
+	public static int calculateSimplePattern(int input) {
+		int output = 0;
+		for (int i = 1; i <= input; i++) {
+			output = output + i; // add i to the previous output.
+		}
+		return output;
+	}
+}
+ ```
+
+```java
+
+public class Application {
+	public static void main(String[] args) {
+		int output = PatternCalculator.calculateSimplePattern(3);
+		System.out.println(output);
+	}
+}
+```
+Observe above as we made method as __static__ we no longer create object and use the __class__ to call the method.
+
+Lets use this to find out total for more than one number
+
+```java
+public class Application {
+	public static void main(String[] args) {
+
+		for(int i=1; i<=5; i++) {
+			int output = PatternCalculator.calculateSimplePattern(i);
+			System.out.println(i + "=>" + output);
+		}
+	}
+}
+```
+and the output will be 
+
+![pattern calculator](https://github.com/sairamaj/programmingclass/blob/master/images/patterncalculatoroutput.png)
+
 
