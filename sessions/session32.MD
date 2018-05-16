@@ -200,4 +200,58 @@ and the output will be
 
 ![pattern calculator](https://github.com/sairamaj/programmingclass/blob/master/images/patterncalculatoroutput.png)
 
+## Findout the coordinates of straight line
+Straight line equation is defined as __y = mx + b__ where __m__ is slope and __b__ is constant. What we can do is to write program to find out the coordinates of given this equations
+
+```java
+
+public class Application {
+	public static void main(String[] args) {
+		int slope = 4;
+		int constant = 3;
+		int y = 0;
+		for(int x = 0 ; x<5; x = x+1) {
+			y = (slope*x) + constant;
+			System.out.println("(" + x + "," + y + ")");
+		}
+	}
+}
+```
+
+We can convert this in to class like below
+```java
+
+public class Line {
+
+	int slope;
+	int constant;
+
+	public Line(int slope, int constant) {
+		this.slope = slope;
+		this.constant = constant;
+	}
+	
+	public int getY(int x) {
+		int y = (this.slope*x) + this.constant;
+		return y;
+	}
+}
+```
+and using the class Line
+```java
+
+public class Application {
+	public static void main(String[] args) {
+		int y;
+		Line line = new Line(4,3);
+		for(int x = 0 ; x<5; x = x+1) {
+			y = line.getY(x);
+			System.out.println("(" + x + "," + y + ")");
+		}
+	}
+}
+```
+
+### Question? Can we make method __getY__ static?
+Answer is No , as method is using class variables __slope__ and __constant__. 
 
