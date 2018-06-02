@@ -27,7 +27,7 @@
 ```
 
 # OOP, Classes
-We are going to solidify our understanding around OOP and classes again with some practical example. We need to understand when we should use instance variables, class variables and method using either of these variables.For this we will be doing some sample application.
+We are going to solidify our understanding around OOP and classes again with some practical example. We need to understand when we should use instance variables, class variables and method using either of these variables. For this we will be doing some sample application.
 
 ## Sample Project
 We are going to develop a mail program and here are the requirements which we need to fulfil in this sample.
@@ -100,7 +100,7 @@ Now that we have classes and its method we should identity the inputs and output
 ```
 
 ### Instance variables
-Now that we have identified classes, methods and its inputs we need to see whether we need any class variables.
+Now that we have identified classes, methods and its inputs we need to see whether we need any instance variables (variables define in the class).
 What we have in __Mail__ class methods for __send__ and __receive__ are the loginUserId being passed each time. Instead of sending loginId each time for these methods what we can do is create instance variable in class which will be part of the instance and because of instance variable the methods can use it.
 
 Lets change Mail class little bit like below
@@ -137,7 +137,7 @@ Lets finish the logic in login method
     }
 ```
 
-We are used to compare the numbers like __x==2__ but for Strings we have to use method __Equals__ which is part of String (String itself is class which comes with JDK). Also see __&&__ which is way of saying __And__ 
+We are used to compare the numbers like __x==2__ but for Strings we have to use method __equals__ which is part of String (String itself is class which comes with JDK). Also see __&&__ which is way of saying __And__ 
 
 With above now we can write mail application to receive and send mails like below
 ```java
