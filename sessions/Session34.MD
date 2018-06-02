@@ -99,5 +99,58 @@ Now that we have classes and its method we should identity the inputs and output
     }
 ```
 
+### Instance variables
+Now that we have identified classes, methods and its inputs we need to see whether we need any class variables.
+What we have in __Mail__ class methods for __send__ and __receive__ are the loginUserId being passed each time. Instead of sending loginId each time for these methods what we can do is create instance variable in class which will be part of the instance and because of instance variable the methods can use it.
 
+Lets change Mail class little bit like below
+```java
+    class Mail{
+        int loginUserId;
 
+        Mail(int loginUserId){
+            this.loginUserId = loginUserId;
+        }
+
+        void send(String to, String subject, String body){
+            System.out.println("Sending mail with login id:" + this.loginUserId);
+            // here mail will be send
+        }
+        void receive(){
+            System.out.println("receiving mails for:" + this.loginUserId);
+        }
+    }
+```
+
+We have removed __loginUserId__ from the inputs for the methods and made part of class which will be available for each instance. This is one way of using instance variables and we will see some more examples of using instance variables.
+
+Lets finish the logic in login method 
+```java
+    int login(String userName, String password){
+
+    	if( userName.equals("Bob") && password.equals("1234")){
+            return 1;
+        }else if(userName.equals("Joe") && password.equals("4567")){
+            return 2;
+        }
+        return 0;       // no user.
+    }
+```
+
+We are used to compare the numbers like __x==2__ but for Strings we have to use method __Equals__ which is part of String (String itself is class which comes with JDK). Also see __&&__ which is way of saying __And__ 
+
+With above now we can write mail application to receive and send mails like below
+```java
+    public class Application{
+        public static void main(String[] args){
+
+            Account a1 = new Account();
+            int id1 = a1.login("Bob","1234");
+             Mail m1 = new Mail(id1);
+            m1.send("s@abc.om","Test email","This is from CoolMail App");
+            m1.receive();
+        }
+    }
+```
+
+In Next class we refine this application to understand more about classes.
