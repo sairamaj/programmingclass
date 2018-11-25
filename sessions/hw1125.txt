@@ -1,0 +1,1 @@
+Last week we have created a window with 3 panels of each different colors using JFrame, JPanel etc.

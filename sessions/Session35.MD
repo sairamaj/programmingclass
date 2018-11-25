@@ -36,3 +36,11 @@
             
         }
     ```
+
+## Recap
+We are in the process of developing __CoolMail__ application. 
+* We have written requirement in plain text about what our application is supposed to do.
+* Identified the __classes__ from __nouns__ and then __methods__ from __verbs__
+* 
+
+
