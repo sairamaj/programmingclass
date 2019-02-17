@@ -63,6 +63,22 @@ __C__ (class) , __R__ (responsibility), __C__ (collaboration)
     ```
 * No need to call the methods. This exercise is only to come up with classes and its methods
 
-### Step2 is coming up ...
+### Step2
+#### Goal
+* In step1 we have created classes and methods. Now we will use these methods to do some stuff
+* Here aim is to have game object and call create method which creates tower.
 
+#### We will do below things to achive this
+* In Eclipse right click on __Step1__ and do __Copy__ and then do __Paste__ where it will ask the new project name and give as __Step2__
+* In __Application__ class we will create  a __Gamer__ object
+* On this new object we will call method __create__
+* In __Gamer__  __create__ method we will create __Tower__ object
+* Once we created __Tower__ object we will call method __draw__ on this
 
+When you run the program below things should happen.
+```cmd
+  creating game
+  drawing the tower
+```
+
+Thats it in step2.
