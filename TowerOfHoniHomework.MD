@@ -67,7 +67,7 @@ __C__ (class) , __R__ (responsibility), __C__ (collaboration)
     ```
 * No need to call the methods. This exercise is only to come up with classes and its methods
 
-[code is here]()
+[code is here](https://github.com/sairamaj/programmingclass/tree/master/toh/Step1)
 
 ### Step2
 #### Goal
@@ -88,6 +88,7 @@ When you run the program below things should happen.
 ```
 
 Thats it in step2.
-[code is here]()
+
+[code is here](https://github.com/sairamaj/programmingclass/tree/master/toh/Step2)
 
 
