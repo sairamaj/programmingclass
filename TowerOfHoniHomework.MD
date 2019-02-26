@@ -91,7 +91,7 @@ Thats it in step2.
 ### Sequence diagram
   One way to understand how the flow (which method is calling which method ) can be understood by __Sequence diagram__.  For the above program where we have created the game and drew the tower , one can draw the sequence diagram like below
 
-![step2sequencediagaram](https://github.com/sairamaj/programmingclass/tree/master/toh/images/step2_sequence.png)
+ ![step2](https://github.com/sairamaj/programmingclass/tree/master/toh/images/step2_sequence.png)
 
 If you observe the Step2 program and the above sequence diagram , you will understand the connection between code and this diagram. 
 
@@ -116,4 +116,5 @@ Goal we will get a __Disc__ from __DiscManager__ and give it to tower through __
 
 Thats it in step3 and our sequence diagram will look like below
 
-![step3sequencediagaram](https://github.com/sairamaj/programmingclass/tree/master/toh/images/step3_sequence.png)
+
+ ![step3](https://github.com/sairamaj/programmingclass/tree/master/toh/images/step3_sequence.png)
