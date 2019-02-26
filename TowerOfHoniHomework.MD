@@ -49,6 +49,10 @@ In above for each class we have mentioned
 __C__ (class) , __R__ (responsibility), __C__ (collaboration)
 
 ### Step1- Exercise
+
+## Goal
+  The step1 goal is just to define the classes and some of the methods. We may not be able to define all the classes and their methods.
+
 * Create Project TowerOfHonaiStep1
 * Create above classes
 * Create class fields
@@ -62,6 +66,8 @@ __C__ (class) , __R__ (responsibility), __C__ (collaboration)
     }
     ```
 * No need to call the methods. This exercise is only to come up with classes and its methods
+
+[code is here]()
 
 ### Step2
 #### Goal
@@ -82,3 +88,6 @@ When you run the program below things should happen.
 ```
 
 Thats it in step2.
+[code is here]()
+
+
