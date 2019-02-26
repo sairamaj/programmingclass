@@ -50,9 +50,6 @@ __C__ (class) , __R__ (responsibility), __C__ (collaboration)
 
 ### Step1- Exercise
 
-## Goal
-  The step1 goal is just to define the classes and some of the methods. We may not be able to define all the classes and their methods.
-
 * Create Project TowerOfHonaiStep1
 * Create above classes
 * Create class fields
@@ -91,4 +88,32 @@ Thats it in step2.
 
 [code is here](https://github.com/sairamaj/programmingclass/tree/master/toh/Step2)
 
+### Sequence diagram
+  One way to understand how the flow (which method is calling which method ) can be understood by __Sequence diagram__.  For the above program where we have created the game and drew the tower , one can draw the sequence diagram like below
 
+![step2 sequence diagaram](https://github.com/sairamaj/programmingclass/tree/master/toh/images/step2_sequence.png)
+
+If you observe the Step2 program and the above sequence diagram , you will understand the connection between code and this diagram. 
+
+### Step3
+Goal we will get a __Disc__ from __DiscManager__ and give it to tower through __addDisc__ method
+
+* Right click and Copy on Step2 project
+* Right click and use Paste and name it Step3
+* Add a method called __getSmallDisc__ where it will return the disc (If you have already added this method in step1, you can ignore)
+* Add a method __addDisc__ in __Tower__. __addDisc__ will take the input as __Disc__ and will look like below
+```java
+  void addDisc(Disc d){
+    System.out.println("adding disc in tower");
+  }
+```
+* Now __Gamer__ will get __Disc__ from __DiscManager__ and give it to __Tower__ like below
+```java
+  DiscManager manager = new DiscManager();
+  Disc d = manager.getSmallDisc();
+  t.addDisc(d);      // we alread have Tower object
+```
+
+Thats it in step3 and our sequence diagram will look like below
+
+![step3 sequence diagaram](https://github.com/sairamaj/programmingclass/tree/master/toh/images/step3_sequence.png)
