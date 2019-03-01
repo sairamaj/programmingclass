@@ -105,7 +105,7 @@ Thats it in step2.
 
 One way to understand how the flow (which method is calling which method ) can be understood by **Sequence diagram**. For the above program where we have created the game and drew the tower , one can draw the sequence diagram like below
 
-![step2](https://github.com/sairamaj/programmingclass/toh/images/step2_sequence.png)
+# ![step2](https://github.com/sairamaj/programmingclass/blob/master/toh/images/step2_sequence.png)
 
 If you observe the Step2 program and the above sequence diagram , you will understand the connection between code and this diagram.
 
@@ -134,7 +134,7 @@ Goal we will get a **Disc** from **DiscManager** and give it to tower through **
 
 Thats it in step3 and our sequence diagram will look like below
 
-![step3](https://github.com/sairamaj/programmingclass/toh/images/step3_sequence.png)
+![step3](https://github.com/sairamaj/programmingclass/blob/master/toh/images/step3_sequence.png)
 
         
       
