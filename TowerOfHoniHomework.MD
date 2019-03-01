@@ -235,3 +235,43 @@ In above our __getSmallDisc__ returning __null__ (no disc). What __Tower__ got i
   Drawing disc
   ```
 [code is here](https://github.com/sairamaj/programmingclass/tree/master/toh/Step4)
+
+### Step5
+#### Goal
+  Lets start drawing the disc.
+
+Modify the __Disc__ class __draw__ method like below
+```java
+	void draw() {
+		System.out.println("-----------");
+	}
+```
+
+When you run the program you will see like below
+```cmd
+creating game
+returns small disc.
+adding disc in tower
+Drawing tower
+-----------
+```
+
+Remove all System.out.println (except one in Disc draw method) and run the program. You will see only disc draw like below
+```cmd
+  -----------
+```
+
+[code is here](https://github.com/sairamaj/programmingclass/tree/master/toh/Step5)
+
+### Step6 (Homework)
+#### Goal
+Lets make change to disc where it can size. Small disc size 6, medium disc size 10 and large disc size 14. Its draw method will only draw '-' of given size. 
+
+i.e
+small disc will draw  __------__
+
+medium disc will draw __----------__
+
+large disc will draw __--------------__
+
+__Hint__ : Use constructor for Disc to take size and modify the draw method to use for loop for drawing single character __-__. use __print__ and not __println__
