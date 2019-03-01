@@ -67,7 +67,7 @@ In above for each class we have mentioned
   - method in Disc
   ```java
       Disc getSmallDisc(){
-      System.out.println("returns small disc.);
+      System.out.println("returns small disc.");
       return null;
   }
   ```
@@ -136,5 +136,13 @@ Thats it in step3 and our sequence diagram will look like below
 
 ![step3](https://github.com/sairamaj/programmingclass/blob/master/toh/images/step3_sequence.png)
 
+When you run the program you will see soet
+```cmd
+creating game
+returns small disc.
+adding disc in tower
+Drawing tower
+```
+[code is here](https://github.com/sairamaj/programmingclass/tree/master/toh/Step3)
         
       
