@@ -111,7 +111,9 @@ If you observe the Step2 program and the above sequence diagram , you will under
 
 ### Step3
 
-Goal we will get a **Disc** from **DiscManager** and give it to tower through **addDisc** method
+#### Goal
+
+we will get a **Disc** from **DiscManager** and give it to tower through **addDisc** method
 
 - Right click and Copy on Step2 project
 - Right click and use Paste and name it Step3
@@ -137,12 +139,99 @@ Thats it in step3 and our sequence diagram will look like below
 ![step3](https://github.com/sairamaj/programmingclass/blob/master/toh/images/step3_sequence.png)
 
 When you run the program you will see soet
+
 ```cmd
 creating game
 returns small disc.
 adding disc in tower
 Drawing tower
 ```
+
 [code is here](https://github.com/sairamaj/programmingclass/tree/master/toh/Step3)
-        
-      
+  
+
+
+### Step4
+
+#### Goal
+
+**Tower** got **Disc** from **Gamer. But it is not doing anything with it. It should draw the discs it got.
+But there is one problem , it got the disc in **addDisc** method and it should draw the disc in **draw\_\_ method. Here the object fields comes in to picture. Do you guys remember we played a Math game where you add a
+single number to the previously given number. Like I give 2 , you give 2 and next time I give 3 you give 5 (2+3) and next time I give 6 you give 11 (5+6) and so on (here you have remembered the prvious addition). This is where object fields can be used to share the variables across methods.
+
+our **Tower** class will look like below
+
+```java
+class Tower{
+  Disc disc;
+
+  void addDisc(Disc d){
+    this.disc = d;
+  }
+
+  void draw(){
+    System.out.println("drawing the disc");
+    this.disc.draw(); // this is the disc which was saved in addDisc method
+  }
+}
+```
+
+our **Disc** class will look like below
+
+```java
+class Disc{
+  void draw(){
+    System.out.println("Drawing the disc");
+  }
+}
+```
+
+Now our sequence diagaram looks like below
+![step4](https://github.com/sairamaj/programmingclass/blob/master/toh/images/step4_sequence.png)
+
+Ok run the program now
+
+Hmm, we got some error like below
+
+```cmd
+creating game
+returns small disc.
+adding disc in tower
+Drawing tower
+Exception in thread "main" java.lang.NullPointerException
+at Tower.draw(Tower.java:6)
+at Gamer.create(Gamer.java:11)
+at Application.main(Application.java:7)
+
+```
+
+What is **NullPointerException**. We have not learned exceptions yet ( we will one of these days). But remember **null** means nothing. Did you have any where null in program? Remember **DiscManager**
+
+```java
+  class DiscManager{
+    	Disc getSmallDisc() {
+		    System.out.println("returns small disc.");
+		    return null;
+	  }
+  }
+```
+In above our __getSmallDisc__ returning __null__ (no disc). What __Tower__ got is __nothing__ and then doing on nothing means we get __NullPointerException__. In order to fix this instead of returning nothing we should return __Disc__ object like below
+
+```java
+  class DiscManager{
+    	Disc getSmallDisc() {
+		    System.out.println("returns small disc.");
+        Disc d = new Disc();
+		    return d;
+	  }
+  }
+
+  Now you run the program and we will get something like below
+  ```cmd
+  creating game
+  returns small disc.
+  adding disc in tower
+  Drawing tower
+  Drawing disc
+  ```
+[code is here](https://github.com/sairamaj/programmingclass/tree/master/toh/Step4)
