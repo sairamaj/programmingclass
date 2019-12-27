@@ -16,10 +16,14 @@ public class Tower {
 		}
 		System.out.println(name);
 	}
-
+	
 	void addDisc(Disc d) {
 		// System.out.println("adding disc");
 		this.discs.add(d);
+	}
+	
+	Disc removeTopDisc() {
+		return this.discs.remove(0);
 	}
 	
 	void drawTower() {
