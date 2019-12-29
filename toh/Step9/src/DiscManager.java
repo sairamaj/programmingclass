@@ -1,6 +1,10 @@
 /*
- * Class: Disc manager
- * Responsibilities: Supplies the dics 
+ * Class: 
+ * 				Disc manager
+ * Responsibilities: 
+ * 				Supplies the disks of different sizes
+ * Collaborations: 
+ * 				Disc
  */
 public class DiscManager {
 	Disc getSmallDisc() {

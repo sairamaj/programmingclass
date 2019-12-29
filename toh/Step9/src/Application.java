@@ -1,5 +1,15 @@
 import java.util.Scanner;
 
+/*
+ *	Class:
+ *			Application
+ *	Responsibilities
+ *			User interaction
+ *			Quit application upon user request
+ *			Quits if game is over.
+ *  Collaborations
+ *  		Gamer
+ */
 public class Application {
 
 	public static void main(String[] args) {

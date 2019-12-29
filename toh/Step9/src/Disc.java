@@ -1,4 +1,11 @@
-
+/*
+ * Class: 
+ * 			Disc
+ * Responsibilities:
+ * 			Draws the disc
+ * Collaborations:
+ * 			None
+ */
 public class Disc {
 	int size;
 
