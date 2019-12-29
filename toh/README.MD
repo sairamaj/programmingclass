@@ -41,14 +41,14 @@ Follow the steps.
         * Disc
 
 ## Sequence Diagrams
-* Step2
+### Step2
 ![step2](images/step2_sequence.png)
-* Step3
+###  Step3
 ![step2](images/step3_sequence.png)
-* Step4
+###  Step4
 ![step4](images/step4_sequence.png)
-* Step9
-![step4](images/step9_sequence.png)
+###  Step9
+![step9](images/step9_sequence.png)
 
 ## Step1
 * Basic project and creating relevant classes with dummy methods
@@ -81,3 +81,8 @@ Follow the steps.
 * __Validations__ has been done added here
 * __GameOver__ method has been added.
 
+# Running the program.
+When you run final program you should see the below screens
+![run1screen](images/runscreen1.png)
+![run1screen](images/runscreen2.png)
+![run1screen](images/runscreen3.png)
