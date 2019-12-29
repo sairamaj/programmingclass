@@ -85,4 +85,6 @@ Follow the steps.
 When you run final program you should see the below screens
 ![run1screen](images/runscreen1.png)
 ![run1screen](images/runscreen2.png)
+
+When alln Discs are moved to Tower
 ![run1screen](images/runscreen3.png)
